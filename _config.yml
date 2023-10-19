@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-#
+
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: From Bytes to Blogs: 0xjoma # the title of site
+title: From Bytes to Blogs:0xjoma # the title of site
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Jomael Ortiz Perez (0xjoma): Aspiring cybersecurity expert and
@@ -32,8 +32,9 @@ github_username:  0xjoma
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: 
+ - jekyll-feed
+ - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
