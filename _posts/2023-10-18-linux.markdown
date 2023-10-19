@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Setting Up Kali Linux on a Bootable USB Device for macOS/OS X"
+date:   2023-10-18
+categories: jekyll update
+---
+
+Coming soon
