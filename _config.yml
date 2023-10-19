@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: From Bytes to Blogs:0xjoma # the title of site
+title: From Bytes to Blogs: 0xjoma # the title of site
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Jomael Ortiz Perez (0xjoma): Aspiring cybersecurity expert and
