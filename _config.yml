@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+
 title: From Bytes to Blogs:0xjoma # the title of site
 author: Jomael Ortiz Perez
-email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Jomael Ortiz Perez (0xjoma): Aspiring cybersecurity expert and
   student delving deep into the world of digital defense.
@@ -28,14 +28,19 @@ description: >- # this means to ignore newlines until "baseurl:"
   and my passion for ensuring a safer online experience.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://0xjoma.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: 0xjoma
 twitter_username: 0xjoma
-github_username:  0xjoma
+linkedin_username: jomael-ortiz-perez-1384ba27b
+rss: true
 
 # Build settings
 theme: minima
 plugins: 
  - jekyll-feed
  - jekyll-seo-tag
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
