@@ -18,16 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
-title: From Bytes to Blogs # the title of site
+# the title of site
+title: From Bytes to Blogs 
 author: Jomael Ortiz Perez (0xjoma)
-description: >- # this means to ignore newlines until "baseurl:"
+# this means to ignore newlines until "baseurl:"
+description: >-
   Aspiring cybersecurity expert and
   student delving deep into the world of digital defense.
   Discover my academic projects, insights from my learning journey, 
   and my passion for ensuring a safer online experience.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://0xjoma.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# the subpath of your site, e.g. /blog
+baseurl: ""
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://0xjoma.github.io"
+# social media links
 github_username: 0xjoma
 twitter_username: 0xjoma
 linkedin_username: jomael-ortiz-perez-1384ba27b
@@ -38,10 +42,7 @@ theme: minima
 plugins: 
  - jekyll-feed
  - jekyll-seo-tag
-
-
-
-
+ 
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
