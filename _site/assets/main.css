@@ -55,7 +55,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Icons */
 .svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
 
-
+.social-media-list { list-style: none; padding: 0; margin: 0; }
+.social-media-list li { display: inline-block; margin-right: 10px; }
 
 /** Tables */
 table { margin-bottom: 30px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #e8e8e8; }
