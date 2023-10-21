@@ -8,8 +8,8 @@
 <meta property="og:title" content="Setting Up Kali Linux on a Bootable USB Device for macOS/OS X" />
 <meta name="author" content="Jomael Ortiz Perez (0xjoma)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Coming soon" />
-<meta property="og:description" content="Coming soon" />
+<meta name="description" content="Description" />
+<meta property="og:description" content="Description" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2023/10/18/linux.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2023/10/18/linux.html" />
 <meta property="og:site_name" content="From Bytes to Blogs" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Setting Up Kali Linux on a Bootable USB Device for macOS/OS X" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"dateModified":"2023-10-18T00:00:00-05:00","datePublished":"2023-10-18T00:00:00-05:00","description":"Coming soon","headline":"Setting Up Kali Linux on a Bootable USB Device for macOS/OS X","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2023/10/18/linux.html"},"url":"http://localhost:4000/jekyll/update/2023/10/18/linux.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"dateModified":"2023-10-18T00:00:00-05:00","datePublished":"2023-10-18T00:00:00-05:00","description":"Description","headline":"Setting Up Kali Linux on a Bootable USB Device for macOS/OS X","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2023/10/18/linux.html"},"url":"http://localhost:4000/jekyll/update/2023/10/18/linux.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" /></head>
 <body><header class="site-header" role="banner">
@@ -48,7 +48,110 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Coming soon</p>
+    <h2 id="description">Description</h2>
+
+<p>With my MacBook Air 2016 no longer receiving support for future macOS updates and faced with storage constraints, I took the initiative to repurpose a spare My Passport Ultra 2TB hard drive from my office inventory. This guide outlines the process of creating a Kali Linux bootable USB device using this hard drive on a macOS environment.</p>
+
+<h2 id="benefits-of-using-a-usb-bootable-kali-linux">Benefits of Using a USB Bootable Kali Linux</h2>
+
+<p><strong>Non-Destructive</strong>: One of the primary advantages of using a bootable USB is its non-destructive nature. Booting from the USB makes no alterations to the host system’s hard drive or the installed OS. This means that there are no risks of accidentally corrupting or erasing essential data. To revert to the original system settings, simply eject the Kali Live USB drive and reboot the machine.</p>
+
+<p><strong>Portability</strong>: With a bootable Kali Linux USB, you have the power of an entire operating system in your pocket. Whether you’re traveling, at a friend’s place, or in need of a secure environment on a public computer, you can boot into Kali Linux within minutes.</p>
+
+<p><strong>Customizability</strong>: If the default Kali Linux distribution doesn’t suit your needs, you aren’t stuck with it. You have the option to craft a custom Kali Linux ISO image tailored to your requirements and flash it onto the USB drive using the same procedures outlined in this guide.</p>
+
+<p><strong>Potential for Persistence</strong>: While a basic Kali Live USB drive is ephemeral by design (meaning data won’t persist across reboots), with some additional setup, you can configure it to have persistent storage. This is invaluable for ongoing projects where you need to save data, tools, or configurations across multiple sessions.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><strong>Hardware</strong>:</p>
+
+<ul>
+  <li>
+    <p>A MacBook Air 2016 or any other Mac computer with available USB ports.</p>
+  </li>
+  <li>
+    <p>A My Passport Ultra 2TB hard drive or any USB drive with sufficient storage (minimum 8GB recommended for Kali Linux, though more is preferable for additional tools and persistent storage).</p>
+  </li>
+  <li>
+    <p>USB to Ethernet Adapter: Essential if your Mac computer does not have an Ethernet port, especially since some wireless cards may not be immediately compatible with Kali Linux.</p>
+  </li>
+</ul>
+
+<p><strong>Software</strong>:</p>
+
+<ul>
+  <li>
+    <p>Kali Linux ISO Image: You can download the latest version from the official Kali website.</p>
+  </li>
+  <li>
+    <p>macOS Terminal: We’ll primarily use the built-in <code class="language-plaintext highlighter-rouge">dd</code> command to flash the ISO image onto the USB drive.</p>
+  </li>
+  <li>
+    <p>Balena Etcher (Optional): If you prefer a graphical interface or encounter issues with the <code class="language-plaintext highlighter-rouge">dd</code> command, you can use Balena Etcher or a similar program as a secondary option. For this documentation I will focus on <code class="language-plaintext highlighter-rouge">dd</code> command.</p>
+  </li>
+  <li>
+    <p>A working macOS/OS X installation to perform the setup.</p>
+  </li>
+</ul>
+
+<p><strong>Optional but Recommended</strong>:</p>
+
+<ul>
+  <li>
+    <p>An external keyboard and mouse if you plan to use Kali Linux extensively, as not all built-in Mac input devices are fully supported.</p>
+  </li>
+  <li>
+    <p>Reliable internet connection for downloading tools, updates, and any other necessary files.</p>
+  </li>
+  <li>
+    <p>Backup of any important data on the USB drive, as the process will erase all existing data on the drive.</p>
+  </li>
+</ul>
+
+<p><strong>Skills and Knowledge</strong>:</p>
+
+<ul>
+  <li>
+    <p>Basic familiarity with the macOS terminal is essential, especially as we are primarily using command-line operations with the <code class="language-plaintext highlighter-rouge">dd</code> command.</p>
+  </li>
+  <li>
+    <p>Understanding disk partitioning can be useful, especially if you plan on configuring persistent storage or multiple boot options on your USB drive.</p>
+  </li>
+</ul>
+
+<p><strong>WARNING</strong>: Although the process of imaging Kali on a USB drive is very easy, you can just as easily overwrite a disk drive you didn’t intend to with <code class="language-plaintext highlighter-rouge">dd</code> if you do not understand what you are doing, or if you specify an incorrect output path. Double-check what you’re doing before you do it, it’ll be too late afterwards.</p>
+
+<h2 id="instructions">Instructions</h2>
+
+<p><strong>Step 1:</strong> Without the USB drive plugged into the system, open a Terminal window, and type the command <code class="language-plaintext highlighter-rouge">diskutil list</code> at the command prompt.</p>
+
+<p><strong>Step 2:</strong> You will get a list of the device paths of the disks mounted on your system, along with information on the partitions on each of the disks.</p>
+
+<p><strong>Note:</strong> The reason we run <code class="language-plaintext highlighter-rouge">diskutil list</code> without the USB drive plugged in is to see what is currently on the system. This will allow us to easily identify the new disk when plugged in.</p>
+
+<p><strong>Step 3:</strong> Plug in your USB device to your Apple computer’s USB port and run the command <code class="language-plaintext highlighter-rouge">diskutil list</code> a second time. Your USB drive’s path will most likely be the last one. In any case, it will be one which wasn’t present before. In this example, you can see that there is now a /dev/disk4 which wasn’t previously present.</p>
+
+<p><strong>Step 4:</strong> Unmount the drive. For me that would be <code class="language-plaintext highlighter-rouge">diskutil unmountDisk /dev/disk4</code> (do not simply copy this, verify the correct path on your own system).</p>
+
+<p><strong>Step 5:</strong> If necessary change directory, <code class="language-plaintext highlighter-rouge">cd</code> where the Kali ISO file is stored.</p>
+
+<p><strong>Step 6:</strong> Proceed to image the Kali ISO file to the USB device.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dd if=kali-linux-2023.3-live-amd64.iso of=/dev/rdisk4 bs=4M status=progress
+</code></pre></div></div>
+
+<p><strong>Note:</strong> If you get the following error: <code class="language-plaintext highlighter-rouge">dd: invalid number '4M'</code>, simply change the ‘4M’ to ‘4m’. Another potential error could be <code class="language-plaintext highlighter-rouge">status=progress</code> does not work on your version of macOS. Remove <code class="language-plaintext highlighter-rouge">status=progress</code> and instead use 
+<code class="language-plaintext highlighter-rouge">CTRL+T </code>to measure status.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.</p>
+
+<h2 id="source">Source</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.kali.org/docs/usb/live-usb-install-with-mac/
+</code></pre></div></div>
+
 
   </div><a class="u-url" href="/jekyll/update/2023/10/18/linux.html" hidden></a>
 </article>
