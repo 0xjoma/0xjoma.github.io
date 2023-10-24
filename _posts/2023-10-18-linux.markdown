@@ -64,7 +64,7 @@ With my MacBook Air 2016 no longer receiving support for future macOS updates an
 
 **Note:** The reason we run `diskutil list` without the USB drive plugged in is to see what is currently on the system. This will allow us to easily identify the new disk when plugged in. 
 
-**Step 3:** Plug in your USB device to your Apple computer’s USB port and run the command `diskutil list` a second time. Your USB drive’s path will most likely be the last one. In any case, it will be one which wasn’t present before. In this example, you can see that there is now a /dev/disk4 which wasn’t previously present.
+**Step 3:** Plug in your USB device to your Apple computer’s USB port and run the command `diskutil list` a second time. Your USB drive’s path will most likely be the last one. In any case, it will be one which wasn’t present before. For me is /dev/disk4 which wasn’t previously present (It maybe be different for you).
 
 **Step 4:** Unmount the drive. For me that would be `diskutil unmountDisk /dev/disk4` (do not simply copy this, verify the correct path on your own system).
 
