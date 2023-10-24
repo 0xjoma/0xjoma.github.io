@@ -130,7 +130,7 @@
 
 <p><strong>Note:</strong> The reason we run <code class="language-plaintext highlighter-rouge">diskutil list</code> without the USB drive plugged in is to see what is currently on the system. This will allow us to easily identify the new disk when plugged in.</p>
 
-<p><strong>Step 3:</strong> Plug in your USB device to your Apple computer’s USB port and run the command <code class="language-plaintext highlighter-rouge">diskutil list</code> a second time. Your USB drive’s path will most likely be the last one. In any case, it will be one which wasn’t present before. In this example, you can see that there is now a /dev/disk4 which wasn’t previously present.</p>
+<p><strong>Step 3:</strong> Plug in your USB device to your Apple computer’s USB port and run the command <code class="language-plaintext highlighter-rouge">diskutil list</code> a second time. Your USB drive’s path will most likely be the last one. In any case, it will be one which wasn’t present before. For me is /dev/disk4 which wasn’t previously present (It maybe be different for you).</p>
 
 <p><strong>Step 4:</strong> Unmount the drive. For me that would be <code class="language-plaintext highlighter-rouge">diskutil unmountDisk /dev/disk4</code> (do not simply copy this, verify the correct path on your own system).</p>
 
@@ -138,8 +138,7 @@
 
 <p><strong>Step 6:</strong> Proceed to image the Kali ISO file to the USB device.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dd if=kali-linux-2023.3-live-amd64.iso of=/dev/rdisk4 bs=4M status=progress
-</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">sudo dd if=kali-linux-2023.3-live-amd64.iso of=/dev/rdisk4 bs=4M status=progress</code></p>
 
 <p><strong>Note:</strong> If you get the following error: <code class="language-plaintext highlighter-rouge">dd: invalid number '4M'</code>, simply change the ‘4M’ to ‘4m’. Another potential error could be <code class="language-plaintext highlighter-rouge">status=progress</code> does not work on your version of macOS. Remove <code class="language-plaintext highlighter-rouge">status=progress</code> and instead use 
 <code class="language-plaintext highlighter-rouge">CTRL+T </code>to measure status.</p>
@@ -149,8 +148,8 @@
 <p>In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.</p>
 
 <h2 id="source">Source</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.kali.org/docs/usb/live-usb-install-with-mac/
-</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">https://www.kali.org/docs/usb/live-usb-install-with-mac/</code></p>
 
 
   </div><a class="u-url" href="/jekyll/update/2023/10/18/linux.html" hidden></a>
