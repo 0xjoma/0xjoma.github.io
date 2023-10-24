@@ -84,7 +84,3 @@ In this guide, we walked through the process of creating a bootable Kali Linux U
 ## Source
 
 `https://www.kali.org/docs/usb/live-usb-install-with-mac/`
-
-
-
-
