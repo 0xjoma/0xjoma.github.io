@@ -4,18 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Hello! I'm Jomael Ortiz Perez, but you might know me as 0xjoma in the digital realm.
+<!-- About me -->
+Hello! My name is Jomael Ortiz Perez, and I am in the digital community as 0xjoma. 
+From an early age, the rhythmic dance of ones and zeros orchestrating our digital world has captivated me. 
+This intrigue propelled me into cybersecurity, where I am now sharpening my acumen as a student. 
+Driven by a deep-seated passion for deciphering the intricacies of digital defense, 
+I dedicate myself to fostering a safer online environment for all. 
 
-From a young age, I have been fascinated by the intricate dance of ones and zeros that power our world. 
-
-This curiosity led me to delve deep into cybersecurity, where I am currently honing my skills and knowledge as a student. 
-My journey in this field is driven by a passion for understanding the complexities of digital defense and a commitment to 
-making the online world a safer place for everyone.
-
-But I am not just about bytes and bits. I believe in the power of sharing knowledge, 
-which is why I have created this space. Here, I chronicle my journey, share insights from my studies, 
-and discuss the ever-evolving landscape of cybersecurity. Whether you are a fellow student, a seasoned expert, 
-or just someone curious about cybersecurity, I hope my blog offers you valuable insights and perspectives.
-      
-
-Thank you for stopping by, and I invite you to join me on this exciting journey, from bytes to blogs!
+Beyond the binary, I am a fervent advocate for knowledge sharing. 
+This belief catalyzed the creation of this platform, where I document my cybersecurity voyage, 
+disseminate insights gleaned from my academic exploration, and engage in discussions around the ever-evolving cybersecurity milieu. 
+Whether you're a student, a seasoned professional, or a digital safety enthusiast, 
+I aspire for this blog to provide valuable insights and fresh perspectives. 
+I appreciate your visit and warmly invite you to join me on this thrilling expedition, from bytes to blogs!

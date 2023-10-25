@@ -3,6 +3,7 @@ layout: post
 title:  "Setting Up Kali Linux on a Bootable USB Device for macOS/OS X"
 date:   2023-10-18
 categories: jekyll update
+download_link: https://www.kali.org/docs/usb/live-usb-install-with-mac/
 ---
 
 ## Description
@@ -80,7 +81,3 @@ With my MacBook Air 2016 no longer receiving support for future macOS updates an
 ## Summary
 
 In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.
-
-## Source
-
-`https://www.kali.org/docs/usb/live-usb-install-with-mac/`

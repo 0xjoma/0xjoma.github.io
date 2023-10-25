@@ -25,7 +25,13 @@ layout: default
   {%- endif -%}
 
 <!-- Google Cybersecurity Specialization Certificate -->
-  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" class="google-cert" download>Source</a>
+{%- if page.download_link -%}
+  <a href="{{ page.download_link }}" download target="_blank" rel="noopener noreferrer">Source</a>
+{%- endif %}
+
+
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+

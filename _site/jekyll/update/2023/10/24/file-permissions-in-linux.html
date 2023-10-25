@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>File Permissions in Linux | From Bytes to Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="File Permissions in Linux" />
+<meta name="author" content="Jomael Ortiz Perez (0xjoma)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Description" />
+<meta property="og:description" content="Description" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" />
+<meta property="og:site_name" content="From Bytes to Blogs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-24T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="File Permissions in Linux" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"dateModified":"2023-10-24T00:00:00-05:00","datePublished":"2023-10-24T00:00:00-05:00","description":"Description","headline":"File Permissions in Linux","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"},"url":"http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">From Bytes to Blogs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">File Permissions in Linux</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-10-24T00:00:00-05:00" itemprop="datePublished">Oct 24, 2023
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="description">Description</h1>
+
+<p>The research team at my organization needs to update the file permissions for certain files and directories within the <code class="language-plaintext highlighter-rouge">projects</code> directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks:</p>
+
+<h1 id="check-file-and-directory-details">Check File and Directory Details</h1>
+
+<p>The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.</p>
+
+<p><img src="/assets\Picture1.png" alt="Sample Image" /></p>
+
+<p>The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the <code class="language-plaintext highlighter-rouge">projects</code> directory. I used the <code class="language-plaintext highlighter-rouge">ls</code> command with the <code class="language-plaintext highlighter-rouge">-la</code> option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named <code class="language-plaintext highlighter-rouge">drafts</code>, one hidden file named <code class="language-plaintext highlighter-rouge">.project_x.txt</code>, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.</p>
+
+<h1 id="describe-the-permissions-string">Describe the Permissions String</h1>
+
+<p>The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:</p>
+<ul>
+  <li>
+    <p><strong>1st character</strong>: This character is either a <code class="language-plaintext highlighter-rouge">d</code> or hyphen <code class="language-plaintext highlighter-rouge">(-)</code> and indicates the file type. If it’s a <code class="language-plaintext highlighter-rouge">d</code>, it’s a directory. If it’s a hyphe
+<code class="language-plaintext highlighter-rouge">(-)</code>, it’s a regular file.</p>
+  </li>
+  <li><strong>2nd-4th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for the user. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, it indicates that this permission is not granted to the user.</li>
+  <li><strong>5th-7th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for the group. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, it indicates that this permission is not granted for the group.</li>
+  <li><strong>8th-10th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, that indicates that this permission is not granted for other.</li>
+</ul>
+
+<p>For example, the file permissions for <code class="language-plaintext highlighter-rouge">project_t.txt</code> are <code class="language-plaintext highlighter-rouge">-rw-rw-r--</code>. Since the first character is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code>, this indicates that <code class="language-plaintext highlighter-rouge">project_t.txt</code> is a file, not a directory. The second, fifth, and eighth characters are all <code class="language-plaintext highlighter-rouge">r</code>, which indicates that user, group, and other all have read permissions. The third and sixth characters are <code class="language-plaintext highlighter-rouge">w</code>, which indicates that only the user and group have write permissions. No one has execute permissions for <code class="language-plaintext highlighter-rouge">project_t.txt</code>.</p>
+
+<h1 id="change-file-permissions">Change File Permissions</h1>
+
+<p>The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined <code class="language-plaintext highlighter-rouge">project_k.txt</code> must have the write access removed for other.</p>
+
+<p>The following code demonstrates how I used Linux commands to do this:</p>
+
+<p><img src="/assets\Picture2.png" alt="Sample Image" /></p>
+
+<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The <code class="language-plaintext highlighter-rouge">chmod</code> command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the <code class="language-plaintext highlighter-rouge">project_k.txt</code> file. After this, I used <code class="language-plaintext highlighter-rouge">ls -la</code> to review the updates I made.</p>
+
+<h1 id="change-file-permissions-on-a-hidden-file">Change File Permissions On A Hidden File</h1>
+
+<p>The research team at my organization recently archived <code class="language-plaintext highlighter-rouge">project_x.txt</code>. They do not want anyone to have write access to this project, but the user and group should have read access.</p>
+
+<p>The following code demonstrates how I used Linux commands to change the permissions:</p>
+
+<p><img src="/assets\Picture3.png" alt="Sample Image" /></p>
+
+<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know <code class="language-plaintext highlighter-rouge">.project_x.txt</code> is a hidden file because it starts with a period <code class="language-plaintext highlighter-rouge">(.)</code>. In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with <code class="language-plaintext highlighter-rouge">u-w</code>. Then, I removed write permissions from the group with <code class="language-plaintext highlighter-rouge">g-w</code>, and added read permissions to the group with <code class="language-plaintext highlighter-rouge">g+r</code>.</p>
+
+<h1 id="change-directory-permissions">Change Directory Permissions</h1>
+
+<p>My organization only wants the <code class="language-plaintext highlighter-rouge">researcher2</code> user to have access to the <code class="language-plaintext highlighter-rouge">drafts</code> directory and its contents. This means that no one other than <code class="language-plaintext highlighter-rouge">researcher2</code> should have execute permissions.</p>
+
+<p>The following code demonstrates how I used Linux commands to change the permissions:</p>
+
+<p><img src="/assets\Picture4.png" alt="Sample Image" /></p>
+
+<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the <code class="language-plaintext highlighter-rouge">chmod</code> command to remove them. The <code class="language-plaintext highlighter-rouge">researcher2</code> user already had execute permissions, so they did not need to be added.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the <code class="language-plaintext highlighter-rouge">projects</code> directory. The first step in this was using <code class="language-plaintext highlighter-rouge">ls -la</code> to check the permissions for the directory. This informed my decisions in the following steps. I then used the <code class="language-plaintext highlighter-rouge">chmod</code> command multiple times to change the permissions on files and directories.</p>
+
+  </div><!-- Google Cybersecurity Specialization Certificate --><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" download target="_blank" rel="noopener noreferrer">Source</a>
+
+
+
+  <a class="u-url" href="/jekyll/update/2023/10/24/file-permissions-in-linux.html" hidden></a>
+</article>
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">From Bytes to Blogs</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Jomael Ortiz Perez (0xjoma)</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/0xjoma"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a href="https://www.linkedin.com/in/jomael-ortiz-perez-1384ba27b"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> </a></li><li><a href="https://www.twitter.com/0xjoma"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg></a></li></ul>
+
+
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
