@@ -48,11 +48,11 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="project-description">Project Description</h1>
+    <h2 id="project-description">Project Description</h2>
 
 <p>My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.</p>
 
-<h1 id="retrieve-after-hours-failed-login-attempts">Retrieve After Hours Failed Login Attempts</h1>
+<h2 id="retrieve-after-hours-failed-login-attempts">Retrieve After Hours Failed Login Attempts</h2>
 
 <p>There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.</p>
 
@@ -62,7 +62,7 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">log_in_attempts</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code>clause with an <code class="language-plaintext highlighter-rouge">AND</code> operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is <code class="language-plaintext highlighter-rouge">login_time &gt; '18:00',</code> which filters for the login attempts that occurred after 18:00. The second condition is <code class="language-plaintext highlighter-rouge">success = FALSE</code>, which filters for the failed login attempts.</p>
 
-<h1 id="retrieve-login-attempts-on-specific-dates">Retrieve Login Attempts On Specific Dates</h1>
+<h2 id="retrieve-login-attempts-on-specific-dates">Retrieve Login Attempts On Specific Dates</h2>
 
 <p>A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated.</p>
 
@@ -72,7 +72,7 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">log_in_attempts</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code> clause with an <code class="language-plaintext highlighter-rouge">OR</code> operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is <code class="language-plaintext highlighter-rouge">login_date = '2022-05-09'</code>, which filters for logins on 2022-05-09. The second condition is <code class="language-plaintext highlighter-rouge">login_date = '2022-05-08'</code>, which filters for logins on 2022-05-08.</p>
 
-<h1 id="retrieve-login-attempts-outside-of-mexico">Retrieve Login Attempts outside of Mexico</h1>
+<h2 id="retrieve-login-attempts-outside-of-mexico">Retrieve Login Attempts outside of Mexico</h2>
 
 <p>After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated.</p>
 
@@ -82,7 +82,7 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">log_in_attempts</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code> clause with <code class="language-plaintext highlighter-rouge">NOT</code> to filter for countries other than Mexico. I used <code class="language-plaintext highlighter-rouge">LIKE</code> with <code class="language-plaintext highlighter-rouge">MEX%</code> as the pattern to match because the dataset represents Mexico as <code class="language-plaintext highlighter-rouge">MEX</code> and <code class="language-plaintext highlighter-rouge">MEXICO</code>. The percentage sign (<code class="language-plaintext highlighter-rouge">%</code>) represents any number of unspecified characters when used with <code class="language-plaintext highlighter-rouge">LIKE</code>.</p>
 
-<h1 id="retrieve-employees-in-marketing">Retrieve Employees In Marketing</h1>
+<h2 id="retrieve-employees-in-marketing">Retrieve Employees In Marketing</h2>
 
 <p>My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update.</p>
 
@@ -92,7 +92,7 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">employees</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code>clause with <code class="language-plaintext highlighter-rouge">AND</code> to filter for employees who work in the Marketing department and in the East building. I used <code class="language-plaintext highlighter-rouge">LIKE</code> with <code class="language-plaintext highlighter-rouge">East%</code> as the pattern to match because the data in the <code class="language-plaintext highlighter-rouge">office</code> column represents the East building with the specific office number. The first condition is the <code class="language-plaintext highlighter-rouge">department = 'Marketing'</code> portion, which filters for employees in the Marketing department. The second condition is the <code class="language-plaintext highlighter-rouge">office LIKE 'East%'</code> portion, which filters for employees in the East building.</p>
 
-<h1 id="retrieve-employees-in-finance-or-sales">Retrieve Employees In Finance Or Sales</h1>
+<h2 id="retrieve-employees-in-finance-or-sales">Retrieve Employees In Finance Or Sales</h2>
 
 <p>The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments.</p>
 
@@ -102,7 +102,7 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">employees</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code> clause with <code class="language-plaintext highlighter-rouge">OR</code> to filter for employees who are in the Finance and Sales departments. I used the <code class="language-plaintext highlighter-rouge">OR</code> operator instead of <code class="language-plaintext highlighter-rouge">AND</code> because I want all employees who are in either department. The first condition is <code class="language-plaintext highlighter-rouge">department = 'Finance'</code>, which filters for employees from the Finance department. The second condition is <code class="language-plaintext highlighter-rouge">department = 'Sales'</code>, which filters for employees from the Sales department.</p>
 
-<h1 id="retrieve-all-employees-not-in-it">Retrieve All Employees Not In IT</h1>
+<h2 id="retrieve-all-employees-not-in-it">Retrieve All Employees Not In IT</h2>
 
 <p>My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees.</p>
 
@@ -112,16 +112,16 @@
 
 <p>The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the <code class="language-plaintext highlighter-rouge">employees</code> table. Then, I used a <code class="language-plaintext highlighter-rouge">WHERE</code> clause with <code class="language-plaintext highlighter-rouge">NOT</code> to filter for employees not in this department.</p>
 
-<h1 id="summary">Summary</h1>
+<h2 id="summary">Summary</h2>
 
 <p>I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, <code class="language-plaintext highlighter-rouge">log_in_attempts</code> and <code class="language-plaintext highlighter-rouge">employees</code>. I used the <code class="language-plaintext highlighter-rouge">AND</code>, <code class="language-plaintext highlighter-rouge">OR</code>, and <code class="language-plaintext highlighter-rouge">NOT</code> operators to filter for the specific information needed for each task. I also used <code class="language-plaintext highlighter-rouge">LIKE</code> and the percentage sign (<code class="language-plaintext highlighter-rouge">%</code>) wildcard to filter for patterns.</p>
 
+<h2 id="credentials">Credentials</h2>
 
-  </div><!-- Google Cybersecurity Specialization Certificate --><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" download target="_blank" rel="noopener noreferrer">Source</a>
+<p>The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.</p>
 
 
-
-  <a class="u-url" href="/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" hidden></a>
+  </div><a class="u-url" href="/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" hidden></a>
 </article>
 
 

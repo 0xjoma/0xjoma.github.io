@@ -1,8 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-26T20:46:26-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">Apply Filters to SQL Queries</title><link href="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" rel="alternate" type="text/html" title="Apply Filters to SQL Queries" /><published>2023-10-26T00:00:00-05:00</published><updated>2023-10-26T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html">&lt;h1 id=&quot;project-description&quot;&gt;Project Description&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-26T21:40:37-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">Vulnerability Assessment Report</title><link href="http://localhost:4000/jekyll/update/2023/10/26/vulnerability-assessment-report.html" rel="alternate" type="text/html" title="Vulnerability Assessment Report" /><published>2023-10-26T00:00:00-05:00</published><updated>2023-10-26T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/26/vulnerability-assessment-report</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/26/vulnerability-assessment-report.html">&lt;h2 id=&quot;system-description&quot;&gt;System Description&lt;/h2&gt;
+&lt;p&gt;The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.&lt;/p&gt;
+
+&lt;h2 id=&quot;scope&quot;&gt;Scope&lt;/h2&gt;
+&lt;p&gt;The scope of this vulnerability assessment relates to the current access controls of the system. The assessment will cover a period of three months, from June 20XX to August 20XX. &lt;a href=&quot;https://docs.google.com/document/d/1pRpdpQMEWskxSkwqEMv8W7A7x8GXQlcn0hEcDzWet3Y/template/preview?resourcekey=0-3GRRWAd8HryVgof-Jc33yA&quot; target=&quot;_blank&quot;&gt;NIST SP 800-30 Rev. 1&lt;/a&gt; is used to guide the risk analysis of the information system.&lt;/p&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;The database server is a centralized computer system that stores and manages large amounts of data. The server is used to store customer, campaign, and analytic data that can later be analyzed to track performance and personalize marketing efforts. It is critical to secure the system because of its regular use for marketing operations.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-assessment&quot;&gt;Risk Assessment&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Threat source&lt;/th&gt;
+      &lt;th&gt;Threat event&lt;/th&gt;
+      &lt;th&gt;Likelihood&lt;/th&gt;
+      &lt;th&gt;Severity&lt;/th&gt;
+      &lt;th&gt;Risk&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hacker&lt;/td&gt;
+      &lt;td&gt;Obtain sensitive information via exfiltration&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Employee&lt;/td&gt;
+      &lt;td&gt;Disrupt mission-critical operations&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Customer&lt;/td&gt;
+      &lt;td&gt;Alter/Delete critical information&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;approach&quot;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Risks that were measured considered the data storage and management procedures of the business. Potential threat sources and events were determined using the likelihood of a security incident given the open access permissions of the information system. The severity of potential incidents were weighed against the impact on day-to-day operational needs.&lt;/p&gt;
+
+&lt;h2 id=&quot;remediation-strategy&quot;&gt;Remediation Strategy&lt;/h2&gt;
+&lt;p&gt;Implementation of authentication, authorization, and auditing mechanisms to ensure that only authorized users access the database server. This includes using strong passwords, role-based access controls, and multi-factor authentication to limit user privileges. Encryption of data in motion using TLS instead of SSL. IP allow-listing to corporate offices to prevent random users from the internet from connecting to the database.&lt;/p&gt;
+
+&lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from my &lt;a href=&quot;https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF&quot; target=&quot;_blank&quot;&gt;Google Cybersecurity Certificate&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">System Description The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.</summary></entry><entry><title type="html">Apply Filters to SQL Queries</title><link href="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" rel="alternate" type="text/html" title="Apply Filters to SQL Queries" /><published>2023-10-26T00:00:00-05:00</published><updated>2023-10-26T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html">&lt;h2 id=&quot;project-description&quot;&gt;Project Description&lt;/h2&gt;
 
 &lt;p&gt;My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-after-hours-failed-login-attempts&quot;&gt;Retrieve After Hours Failed Login Attempts&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-after-hours-failed-login-attempts&quot;&gt;Retrieve After Hours Failed Login Attempts&lt;/h2&gt;
 
 &lt;p&gt;There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.&lt;/p&gt;
 
@@ -12,7 +66,7 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log_in_attempts&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt;clause with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND&lt;/code&gt; operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;login_time &amp;gt; &apos;18:00&apos;,&lt;/code&gt; which filters for the login attempts that occurred after 18:00. The second condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;success = FALSE&lt;/code&gt;, which filters for the failed login attempts.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-login-attempts-on-specific-dates&quot;&gt;Retrieve Login Attempts On Specific Dates&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-login-attempts-on-specific-dates&quot;&gt;Retrieve Login Attempts On Specific Dates&lt;/h2&gt;
 
 &lt;p&gt;A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated.&lt;/p&gt;
 
@@ -22,7 +76,7 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log_in_attempts&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt; clause with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR&lt;/code&gt; operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;login_date = &apos;2022-05-09&apos;&lt;/code&gt;, which filters for logins on 2022-05-09. The second condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;login_date = &apos;2022-05-08&apos;&lt;/code&gt;, which filters for logins on 2022-05-08.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-login-attempts-outside-of-mexico&quot;&gt;Retrieve Login Attempts outside of Mexico&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-login-attempts-outside-of-mexico&quot;&gt;Retrieve Login Attempts outside of Mexico&lt;/h2&gt;
 
 &lt;p&gt;After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated.&lt;/p&gt;
 
@@ -32,7 +86,7 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log_in_attempts&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt; clause with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NOT&lt;/code&gt; to filter for countries other than Mexico. I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIKE&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MEX%&lt;/code&gt; as the pattern to match because the dataset represents Mexico as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MEX&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MEXICO&lt;/code&gt;. The percentage sign (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;) represents any number of unspecified characters when used with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIKE&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-employees-in-marketing&quot;&gt;Retrieve Employees In Marketing&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-employees-in-marketing&quot;&gt;Retrieve Employees In Marketing&lt;/h2&gt;
 
 &lt;p&gt;My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update.&lt;/p&gt;
 
@@ -42,7 +96,7 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;employees&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt;clause with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND&lt;/code&gt; to filter for employees who work in the Marketing department and in the East building. I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIKE&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;East%&lt;/code&gt; as the pattern to match because the data in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;office&lt;/code&gt; column represents the East building with the specific office number. The first condition is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;department = &apos;Marketing&apos;&lt;/code&gt; portion, which filters for employees in the Marketing department. The second condition is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;office LIKE &apos;East%&apos;&lt;/code&gt; portion, which filters for employees in the East building.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-employees-in-finance-or-sales&quot;&gt;Retrieve Employees In Finance Or Sales&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-employees-in-finance-or-sales&quot;&gt;Retrieve Employees In Finance Or Sales&lt;/h2&gt;
 
 &lt;p&gt;The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments.&lt;/p&gt;
 
@@ -52,7 +106,7 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;employees&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt; clause with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR&lt;/code&gt; to filter for employees who are in the Finance and Sales departments. I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR&lt;/code&gt; operator instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND&lt;/code&gt; because I want all employees who are in either department. The first condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;department = &apos;Finance&apos;&lt;/code&gt;, which filters for employees from the Finance department. The second condition is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;department = &apos;Sales&apos;&lt;/code&gt;, which filters for employees from the Sales department.&lt;/p&gt;
 
-&lt;h1 id=&quot;retrieve-all-employees-not-in-it&quot;&gt;Retrieve All Employees Not In IT&lt;/h1&gt;
+&lt;h2 id=&quot;retrieve-all-employees-not-in-it&quot;&gt;Retrieve All Employees Not In IT&lt;/h2&gt;
 
 &lt;p&gt;My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees.&lt;/p&gt;
 
@@ -62,13 +116,17 @@
 
 &lt;p&gt;The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;employees&lt;/code&gt; table. Then, I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt; clause with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NOT&lt;/code&gt; to filter for employees not in this department.&lt;/p&gt;
 
-&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log_in_attempts&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;employees&lt;/code&gt;. I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NOT&lt;/code&gt; operators to filter for the specific information needed for each task. I also used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIKE&lt;/code&gt; and the percentage sign (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;) wildcard to filter for patterns.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Project Description</summary></entry><entry><title type="html">File Permissions in Linux</title><link href="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" rel="alternate" type="text/html" title="File Permissions in Linux" /><published>2023-10-24T00:00:00-05:00</published><updated>2023-10-24T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html">&lt;h1 id=&quot;description&quot;&gt;Description&lt;/h1&gt;
+&lt;p&gt;I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log_in_attempts&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;employees&lt;/code&gt;. I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NOT&lt;/code&gt; operators to filter for the specific information needed for each task. I also used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIKE&lt;/code&gt; and the percentage sign (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;) wildcard to filter for patterns.&lt;/p&gt;
+
+&lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from my &lt;a href=&quot;https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF&quot; target=&quot;_blank&quot;&gt;Google Cybersecurity Certificate&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Project Description</summary></entry><entry><title type="html">File Permissions in Linux</title><link href="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" rel="alternate" type="text/html" title="File Permissions in Linux" /><published>2023-10-24T00:00:00-05:00</published><updated>2023-10-24T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html">&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
 
 &lt;p&gt;The research team at my organization needs to update the file permissions for certain files and directories within the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projects&lt;/code&gt; directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks:&lt;/p&gt;
 
-&lt;h1 id=&quot;check-file-and-directory-details&quot;&gt;Check File and Directory Details&lt;/h1&gt;
+&lt;h2 id=&quot;check-file-and-directory-details&quot;&gt;Check File and Directory Details&lt;/h2&gt;
 
 &lt;p&gt;The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.&lt;/p&gt;
 
@@ -76,7 +134,7 @@
 
 &lt;p&gt;The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projects&lt;/code&gt; directory. I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; command with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-la&lt;/code&gt; option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drafts&lt;/code&gt;, one hidden file named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.project_x.txt&lt;/code&gt;, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.&lt;/p&gt;
 
-&lt;h1 id=&quot;describe-the-permissions-string&quot;&gt;Describe the Permissions String&lt;/h1&gt;
+&lt;h2 id=&quot;describe-the-permissions-string&quot;&gt;Describe the Permissions String&lt;/h2&gt;
 
 &lt;p&gt;The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -91,7 +149,7 @@
 
 &lt;p&gt;For example, the file permissions for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_t.txt&lt;/code&gt; are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-rw-rw-r--&lt;/code&gt;. Since the first character is a hyphen &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(-)&lt;/code&gt;, this indicates that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_t.txt&lt;/code&gt; is a file, not a directory. The second, fifth, and eighth characters are all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt;, which indicates that user, group, and other all have read permissions. The third and sixth characters are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w&lt;/code&gt;, which indicates that only the user and group have write permissions. No one has execute permissions for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_t.txt&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;change-file-permissions&quot;&gt;Change File Permissions&lt;/h1&gt;
+&lt;h2 id=&quot;change-file-permissions&quot;&gt;Change File Permissions&lt;/h2&gt;
 
 &lt;p&gt;The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_k.txt&lt;/code&gt; must have the write access removed for other.&lt;/p&gt;
 
@@ -101,7 +159,7 @@
 
 &lt;p&gt;The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_k.txt&lt;/code&gt; file. After this, I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; to review the updates I made.&lt;/p&gt;
 
-&lt;h1 id=&quot;change-file-permissions-on-a-hidden-file&quot;&gt;Change File Permissions On A Hidden File&lt;/h1&gt;
+&lt;h2 id=&quot;change-file-permissions-on-a-hidden-file&quot;&gt;Change File Permissions On A Hidden File&lt;/h2&gt;
 
 &lt;p&gt;The research team at my organization recently archived &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;project_x.txt&lt;/code&gt;. They do not want anyone to have write access to this project, but the user and group should have read access.&lt;/p&gt;
 
@@ -111,7 +169,7 @@
 
 &lt;p&gt;The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.project_x.txt&lt;/code&gt; is a hidden file because it starts with a period &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(.)&lt;/code&gt;. In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u-w&lt;/code&gt;. Then, I removed write permissions from the group with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g-w&lt;/code&gt;, and added read permissions to the group with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;g+r&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;change-directory-permissions&quot;&gt;Change Directory Permissions&lt;/h1&gt;
+&lt;h2 id=&quot;change-directory-permissions&quot;&gt;Change Directory Permissions&lt;/h2&gt;
 
 &lt;p&gt;My organization only wants the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;researcher2&lt;/code&gt; user to have access to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drafts&lt;/code&gt; directory and its contents. This means that no one other than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;researcher2&lt;/code&gt; should have execute permissions.&lt;/p&gt;
 
@@ -121,11 +179,13 @@
 
 &lt;p&gt;The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command to remove them. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;researcher2&lt;/code&gt; user already had execute permissions, so they did not need to be added.&lt;/p&gt;
 
-&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projects&lt;/code&gt; directory. The first step in this was using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; to check the permissions for the directory. This informed my decisions in the following steps. I then used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command multiple times to change the permissions on files and directories.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Description</summary></entry><entry><title type="html">Incident Report Analysis</title><link href="http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis.html" rel="alternate" type="text/html" title="Incident Report Analysis" /><published>2023-10-23T00:00:00-05:00</published><updated>2023-10-23T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis.html">&lt;h1 id=&quot;incident-report-analysis&quot;&gt;Incident Report Analysis&lt;/h1&gt;
+&lt;p&gt;I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projects&lt;/code&gt; directory. The first step in this was using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; to check the permissions for the directory. This informed my decisions in the following steps. I then used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command multiple times to change the permissions on files and directories.&lt;/p&gt;
 
-&lt;table&gt;
+&lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from my &lt;a href=&quot;https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF&quot; target=&quot;_blank&quot;&gt;Google Cybersecurity Certificate&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Description</summary></entry><entry><title type="html">Incident Report Analysis</title><link href="http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis.html" rel="alternate" type="text/html" title="Incident Report Analysis" /><published>2023-10-23T00:00:00-05:00</published><updated>2023-10-23T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/23/incident-report-analysis.html">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt; &lt;/th&gt;
@@ -172,11 +232,15 @@
   &lt;li&gt;&lt;strong&gt;Recovery and Resilience:&lt;/strong&gt; The final “Recover” step underscored the need for a strategic approach to system restoration. Beyond just bringing systems back online, there is an evident emphasis on doing so methodically, prioritizing critical services, and ensuring future resilience against similar attacks.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;In conclusion, this incident report analysis has reinforced the understanding that cybersecurity is not just about prevention but also about effective management when breaches occur. The structured approach to identifying, protecting, detecting, responding, and recovering provides a robust framework that ensures the organization’s technical safety, operational continuity, and reputation integrity.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Incident Report Analysis</summary></entry><entry><title type="html">Setting Up Kali Linux on a Bootable USB Device for macOS/OS X</title><link href="http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux.html" rel="alternate" type="text/html" title="Setting Up Kali Linux on a Bootable USB Device for macOS/OS X" /><published>2023-10-18T00:00:00-05:00</published><updated>2023-10-18T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux.html">&lt;h1 id=&quot;description&quot;&gt;Description&lt;/h1&gt;
+&lt;p&gt;In conclusion, this incident report analysis has reinforced the understanding that cybersecurity is not just about prevention but also about effective management when breaches occur. The structured approach to identifying, protecting, detecting, responding, and recovering provides a robust framework that ensures the organization’s technical safety, operational continuity, and reputation integrity.&lt;/p&gt;
+
+&lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from my &lt;a href=&quot;https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF&quot; target=&quot;_blank&quot;&gt;Google Cybersecurity Certificate&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">    Summary The company experienced a security event when all network services suddenly stopped responding. The cybersecurity team found the disruption was caused by a distributed denial of services (DDoS) attack through a flood of incoming ICMP packets. The team responded by blocking the attack and stopping all non-critical network services, so that critical network services could be restored. Identify A malicious actor or actors targeted the company with an ICMP flood attack. The entire internal network was affected. All critical network resources needed to be secured and restored to a functioning state. Protect The cybersecurity team implemented a new firewall rule to limit the rate of incoming ICMP packets and an IDS/IPS system to filter out some ICMP traffic based on suspicious characteristics. Detect The cybersecurity team configured source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets and implemented network monitoring software to detect abnormal traffic patterns. Respond For future security events, the cybersecurity team will isolate affected systems to prevent further disruption to the network. They will attempt to restore any critical systems and services that were disrupted by the event. Then, the team will analyze network logs to check for suspicious and abnormal activity. The team will also report all incidents to upper management and appropriate legal authorities, if applicable. Recover To recover from a DDoS attack by ICMP flooding, access to network services need to be restored to a normal functioning state. In the future, external ICMP flood attacks can be blocked at the firewall. Then, all non-critical network services should be stopped to reduce internal network traffic. Next, critical network services should be restored first. Finally, once the flood of ICMP packets have timed out, all non-critical network systems and services can be brought back online.</summary></entry><entry><title type="html">Setting Up Kali Linux on a Bootable USB Device for macOS/OS X</title><link href="http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux.html" rel="alternate" type="text/html" title="Setting Up Kali Linux on a Bootable USB Device for macOS/OS X" /><published>2023-10-18T00:00:00-05:00</published><updated>2023-10-18T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/18/setting-up-kali-linux.html">&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
 
 &lt;p&gt;With my MacBook Air 2016 no longer receiving support for future macOS updates and faced with storage constraints, I took the initiative to repurpose a spare My Passport Ultra 2TB hard drive from my office inventory. This guide outlines the process of creating a Kali Linux bootable USB device using this hard drive on a macOS environment.&lt;/p&gt;
 
-&lt;h1 id=&quot;benefits-of-using-a-usb-bootable-kali-linux&quot;&gt;Benefits of Using a USB Bootable Kali Linux&lt;/h1&gt;
+&lt;h2 id=&quot;benefits-of-using-a-usb-bootable-kali-linux&quot;&gt;Benefits of Using a USB Bootable Kali Linux&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Non-Destructive&lt;/strong&gt;: One of the primary advantages of using a bootable USB is its non-destructive nature. Booting from the USB makes no alterations to the host system’s hard drive or the installed OS. This means that there are no risks of accidentally corrupting or erasing essential data. To revert to the original system settings, simply eject the Kali Live USB drive and reboot the machine.&lt;/p&gt;
 
@@ -186,7 +250,7 @@
 
 &lt;p&gt;&lt;strong&gt;Potential for Persistence&lt;/strong&gt;: While a basic Kali Live USB drive is ephemeral by design (meaning data won’t persist across reboots), with some additional setup, you can configure it to have persistent storage. This is invaluable for ongoing projects where you need to save data, tools, or configurations across multiple sessions.&lt;/p&gt;
 
-&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Hardware&lt;/strong&gt;:&lt;/p&gt;
 
@@ -246,7 +310,7 @@
 
 &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Although the process of imaging Kali on a USB drive is very easy, you can just as easily overwrite a disk drive you didn’t intend to with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dd&lt;/code&gt; if you do not understand what you are doing, or if you specify an incorrect output path. Double-check what you’re doing before you do it, it’ll be too late afterwards.&lt;/p&gt;
 
-&lt;h1 id=&quot;instructions&quot;&gt;Instructions&lt;/h1&gt;
+&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Without the USB drive plugged into the system, open a Terminal window, and type the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diskutil list&lt;/code&gt; at the command prompt.&lt;/p&gt;
 
@@ -267,6 +331,10 @@
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you get the following error: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dd: invalid number &apos;4M&apos;&lt;/code&gt;, simply change the ‘4M’ to ‘4m’. Another potential error could be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;status=progress&lt;/code&gt; does not work on your version of macOS. Remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;status=progress&lt;/code&gt; and instead use 
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL+T &lt;/code&gt;to measure status.&lt;/p&gt;
 
-&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Description</summary></entry></feed>
+&lt;p&gt;In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.&lt;/p&gt;
+
+&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from &lt;a href=&quot;https://www.kali.org/docs/usb/live-usb-install-with-mac/&quot; target=&quot;_blank&quot;&gt;Making a Kali Bootable USB Drive (macOS/OS X)&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Description</summary></entry></feed>

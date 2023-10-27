@@ -3,10 +3,7 @@ layout: post
 title:  "Incident Report Analysis"
 date:   2023-10-23
 categories: jekyll update
-download_link: https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF
 ---
-
-# Incident Report Analysis
 
 |            |                                                                                                                                                                                                                                                                                                                                                                 |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -28,3 +25,7 @@ From the incident report analysis, I have gained comprehensive insights into the
 5. **Recovery and Resilience:** The final "Recover" step underscored the need for a strategic approach to system restoration. Beyond just bringing systems back online, there is an evident emphasis on doing so methodically, prioritizing critical services, and ensuring future resilience against similar attacks.
 
 In conclusion, this incident report analysis has reinforced the understanding that cybersecurity is not just about prevention but also about effective management when breaches occur. The structured approach to identifying, protecting, detecting, responding, and recovering provides a robust framework that ensures the organization's technical safety, operational continuity, and reputation integrity.
+
+## Credentials
+
+The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.

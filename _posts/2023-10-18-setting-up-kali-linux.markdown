@@ -3,14 +3,13 @@ layout: post
 title:  "Setting Up Kali Linux on a Bootable USB Device for macOS/OS X"
 date:   2023-10-18
 categories: jekyll update
-download_link: https://www.kali.org/docs/usb/live-usb-install-with-mac/
 ---
 
-# Description
+## Description
 
 With my MacBook Air 2016 no longer receiving support for future macOS updates and faced with storage constraints, I took the initiative to repurpose a spare My Passport Ultra 2TB hard drive from my office inventory. This guide outlines the process of creating a Kali Linux bootable USB device using this hard drive on a macOS environment.
 
-# Benefits of Using a USB Bootable Kali Linux
+## Benefits of Using a USB Bootable Kali Linux
 
 **Non-Destructive**: One of the primary advantages of using a bootable USB is its non-destructive nature. Booting from the USB makes no alterations to the host system's hard drive or the installed OS. This means that there are no risks of accidentally corrupting or erasing essential data. To revert to the original system settings, simply eject the Kali Live USB drive and reboot the machine.
 
@@ -20,7 +19,7 @@ With my MacBook Air 2016 no longer receiving support for future macOS updates an
 
 **Potential for Persistence**: While a basic Kali Live USB drive is ephemeral by design (meaning data won't persist across reboots), with some additional setup, you can configure it to have persistent storage. This is invaluable for ongoing projects where you need to save data, tools, or configurations across multiple sessions.
 
-# Requirements
+## Requirements
 
 **Hardware**:
 
@@ -56,7 +55,7 @@ With my MacBook Air 2016 no longer receiving support for future macOS updates an
 
 **WARNING**: Although the process of imaging Kali on a USB drive is very easy, you can just as easily overwrite a disk drive you didn’t intend to with `dd` if you do not understand what you are doing, or if you specify an incorrect output path. Double-check what you’re doing before you do it, it’ll be too late afterwards.
 
-# Instructions
+## Instructions
 
 **Step 1:** Without the USB drive plugged into the system, open a Terminal window, and type the command `diskutil list` at the command prompt.
 
@@ -78,6 +77,10 @@ With my MacBook Air 2016 no longer receiving support for future macOS updates an
 **Note:** If you get the following error: `dd: invalid number '4M'`, simply change the '4M' to '4m'. Another potential error could be `status=progress` does not work on your version of macOS. Remove `status=progress` and instead use 
 `CTRL+T `to measure status.
 
-# Summary
+## Summary
 
 In this guide, we walked through the process of creating a bootable Kali Linux USB drive on a macOS/OS X system. By leveraging the built-in utilities of macOS, we were able to prepare and flash a USB drive with the Kali Linux ISO, turning it into a portable and powerful tool for penetration testing and cybersecurity tasks.
+
+## Source
+
+The skills and knowledge demonstrated in this article were acquired from <a href="https://www.kali.org/docs/usb/live-usb-install-with-mac/" target="_blank">Making a Kali Bootable USB Drive (macOS/OS X)</a>. Feel free to view it for verification.
