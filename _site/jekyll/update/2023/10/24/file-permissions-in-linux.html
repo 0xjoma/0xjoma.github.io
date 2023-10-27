@@ -56,7 +56,7 @@
 
 <p>The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.</p>
 
-<p><img src="/assets\Picture1.png" alt="Sample Image" /></p>
+<p><img src="/assets\file-permissions-in-linux\check-file-and-directory-details.png" alt="A screenshot of Linux commands to determine the existing permissions set for a specific directory in the file system." /></p>
 
 <p>The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the <code class="language-plaintext highlighter-rouge">projects</code> directory. I used the <code class="language-plaintext highlighter-rouge">ls</code> command with the <code class="language-plaintext highlighter-rouge">-la</code> option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named <code class="language-plaintext highlighter-rouge">drafts</code>, one hidden file named <code class="language-plaintext highlighter-rouge">.project_x.txt</code>, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.</p>
 
@@ -81,7 +81,7 @@
 
 <p>The following code demonstrates how I used Linux commands to do this:</p>
 
-<p><img src="/assets\Picture2.png" alt="Sample Image" /></p>
+<p><img src="/assets\file-permissions-in-linux\change-file-permissions.png" alt="A screenshot of Linux commands to change file permissions." /></p>
 
 <p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The <code class="language-plaintext highlighter-rouge">chmod</code> command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the <code class="language-plaintext highlighter-rouge">project_k.txt</code> file. After this, I used <code class="language-plaintext highlighter-rouge">ls -la</code> to review the updates I made.</p>
 
@@ -91,7 +91,7 @@
 
 <p>The following code demonstrates how I used Linux commands to change the permissions:</p>
 
-<p><img src="/assets\Picture3.png" alt="Sample Image" /></p>
+<p><img src="/assets\file-permissions-in-linux\change-file-permissions-on-a-hidden-file.png" alt="A screenshot of Linux commands to change file permissions on a hidden file." /></p>
 
 <p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know <code class="language-plaintext highlighter-rouge">.project_x.txt</code> is a hidden file because it starts with a period <code class="language-plaintext highlighter-rouge">(.)</code>. In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with <code class="language-plaintext highlighter-rouge">u-w</code>. Then, I removed write permissions from the group with <code class="language-plaintext highlighter-rouge">g-w</code>, and added read permissions to the group with <code class="language-plaintext highlighter-rouge">g+r</code>.</p>
 
@@ -101,7 +101,7 @@
 
 <p>The following code demonstrates how I used Linux commands to change the permissions:</p>
 
-<p><img src="/assets\Picture4.png" alt="Sample Image" /></p>
+<p><img src="/assets\file-permissions-in-linux\change-directory-permissions.png" alt="A screenshot of Linux commands to change directory permissions." /></p>
 
 <p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the <code class="language-plaintext highlighter-rouge">chmod</code> command to remove them. The <code class="language-plaintext highlighter-rouge">researcher2</code> user already had execute permissions, so they did not need to be added.</p>
 
