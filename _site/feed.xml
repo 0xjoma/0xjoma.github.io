@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-26T22:32:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">Apply Filters to SQL Queries</title><link href="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" rel="alternate" type="text/html" title="Apply Filters to SQL Queries" /><published>2023-10-26T00:00:00-05:00</published><updated>2023-10-26T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html">&lt;h2 id=&quot;project-description&quot;&gt;Project Description&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-27T20:38:36-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">Crafting a Comprehensive Information Security Policy: A Deep Dive into QuantumVerse Technologies LLC</title><link href="http://localhost:4000/jekyll/update/2023/10/27/information-security-policy.html" rel="alternate" type="text/html" title="Crafting a Comprehensive Information Security Policy: A Deep Dive into QuantumVerse Technologies LLC" /><published>2023-10-27T00:00:00-05:00</published><updated>2023-10-27T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/27/information-security-policy</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/27/information-security-policy.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Information security policies are the backbone of any organization’s cybersecurity defense mechanism. These policies provide a structured approach to securing digital assets, infrastructure, and information. In a recent project for my IS Security Analysis class, I devised a comprehensive information security policy for a hypothetical entity, QuantumVerse Technologies LLC. In this blog, I’ll walk you through the intricate layers of the policy and the rationale behind each section.&lt;/p&gt;
+
+&lt;h2 id=&quot;quantumverse-technologies-llc-at-a-glance&quot;&gt;QuantumVerse Technologies LLC: At a Glance&lt;/h2&gt;
+
+&lt;p&gt;QuantumVerse Technologies stands as a beacon of medical innovation, blending cutting-edge technology with healthcare solutions. As such, the company’s data and technological resources are invaluable, making a robust security policy not just necessary but critical.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-takeaways-from-the-policy&quot;&gt;Key Takeaways from the Policy&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Scope and Applicability:&lt;/strong&gt; The policy covers every possible data medium - from hardcopy reports to digital databases. It also applies to all personnel and systems that handle information.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Role Definitions:&lt;/strong&gt; The policy starts by defining roles and their responsibilities, like the CEO, CIO, and various other positions, ensuring accountability.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Application Security:&lt;/strong&gt; Emphasizes upholding security standards, delineating responsibilities depending on the management of a software environment or application.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Backup and Storage:&lt;/strong&gt; Provides detailed measures for categorizing, backing up, and storing data. This section also emphasizes encryption and periodic restoration tests to maintain data integrity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Physical Security:&lt;/strong&gt; Highlights the importance of personnel in data security and provides guidelines for building security, ensuring data safety from physical threats.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Network Device Installation and Configuration:&lt;/strong&gt; Addresses the necessity of standardized settings and security configurations for network devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Handling:&lt;/strong&gt; Classifies data based on sensitivity and provides guidelines for storage, encryption, and sharing.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Remote Access:&lt;/strong&gt; Lays out the framework for granting remote access, ensuring secure connections, and maintaining the security of devices accessing the network remotely.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Email and Internet Access:&lt;/strong&gt; Stresses the judicious use of electronic communication systems, detailing acceptable and prohibited activities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Device Security:&lt;/strong&gt; Focuses on the importance of registering devices, password protection, encryption, and maintaining the physical security of devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Communicating to Stakeholders:&lt;/strong&gt; Establishes the need for transparent communication with stakeholders, regular updates, and emergency communications.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Creating an information security policy requires a deep understanding of the organization’s needs, the potential risks it faces, and the best cybersecurity practices. The policy crafted for QuantumVerse Technologies LLC is a testament to the multifaceted approach needed to ensure comprehensive protection against threats in the digital age.
+This project was a valuable exercise in understanding the intricacies of cybersecurity and the importance of a well-drafted policy. As I further my studies in Information Systems and Cybersecurity, I look forward to diving deeper into cybersecurity and contributing to a safer digital future.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-the-author&quot;&gt;About the Author&lt;/h2&gt;
+
+&lt;p&gt;I am a student pursuing a B.S. in Information Systems and Cybersecurity. Passionate about the world of digital security, I am dedicated to understanding the complexities of cybersecurity and crafting solutions for a safer digital environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets\Information_Security_Policy.docx&quot;&gt;Download my Information Security Policy&lt;/a&gt;&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Introduction</summary></entry><entry><title type="html">Vulnerability Assessment Report</title><link href="http://localhost:4000/jekyll/update/2023/10/27/vulnerability-assessment-report.html" rel="alternate" type="text/html" title="Vulnerability Assessment Report" /><published>2023-10-27T00:00:00-05:00</published><updated>2023-10-27T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/27/vulnerability-assessment-report</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/27/vulnerability-assessment-report.html">&lt;h2 id=&quot;system-description&quot;&gt;System Description&lt;/h2&gt;
+&lt;p&gt;The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.&lt;/p&gt;
+
+&lt;h2 id=&quot;scope&quot;&gt;Scope&lt;/h2&gt;
+&lt;p&gt;The scope of this vulnerability assessment relates to the current access controls of the system. The assessment will cover a period of three months, from June 20XX to August 20XX. &lt;a href=&quot;https://docs.google.com/document/d/1pRpdpQMEWskxSkwqEMv8W7A7x8GXQlcn0hEcDzWet3Y/template/preview?resourcekey=0-3GRRWAd8HryVgof-Jc33yA&quot; target=&quot;_blank&quot;&gt;NIST SP 800-30 Rev. 1&lt;/a&gt; is used to guide the risk analysis of the information system.&lt;/p&gt;
+
+&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;The database server is a centralized computer system that stores and manages large amounts of data. The server is used to store customer, campaign, and analytic data that can later be analyzed to track performance and personalize marketing efforts. It is critical to secure the system because of its regular use for marketing operations.&lt;/p&gt;
+
+&lt;h2 id=&quot;risk-assessment&quot;&gt;Risk Assessment&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Threat source&lt;/th&gt;
+      &lt;th&gt;Threat event&lt;/th&gt;
+      &lt;th&gt;Likelihood&lt;/th&gt;
+      &lt;th&gt;Severity&lt;/th&gt;
+      &lt;th&gt;Risk&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hacker&lt;/td&gt;
+      &lt;td&gt;Obtain sensitive information via exfiltration&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Employee&lt;/td&gt;
+      &lt;td&gt;Disrupt mission-critical operations&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Customer&lt;/td&gt;
+      &lt;td&gt;Alter/Delete critical information&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;approach&quot;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Risks that were measured considered the data storage and management procedures of the business. Potential threat sources and events were determined using the likelihood of a security incident given the open access permissions of the information system. The severity of potential incidents were weighed against the impact on day-to-day operational needs.&lt;/p&gt;
+
+&lt;h2 id=&quot;remediation-strategy&quot;&gt;Remediation Strategy&lt;/h2&gt;
+&lt;p&gt;Implementation of authentication, authorization, and auditing mechanisms to ensure that only authorized users access the database server. This includes using strong passwords, role-based access controls, and multi-factor authentication to limit user privileges. Encryption of data in motion using TLS instead of SSL. IP allow-listing to corporate offices to prevent random users from the internet from connecting to the database.&lt;/p&gt;
+
+&lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+
+&lt;p&gt;The skills and knowledge demonstrated in this article were acquired from my &lt;a href=&quot;https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF&quot; target=&quot;_blank&quot;&gt;Google Cybersecurity Certificate&lt;/a&gt;. Feel free to view it for verification.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">System Description The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.</summary></entry><entry><title type="html">Apply Filters to SQL Queries</title><link href="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html" rel="alternate" type="text/html" title="Apply Filters to SQL Queries" /><published>2023-10-26T00:00:00-05:00</published><updated>2023-10-26T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/26/apply-filters-to-sql-queries.html">&lt;h2 id=&quot;project-description&quot;&gt;Project Description&lt;/h2&gt;
 
 &lt;p&gt;My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.&lt;/p&gt;
 
