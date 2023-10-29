@@ -199,3 +199,19 @@ table td { border: 1px solid #e8e8e8; }
 .social-media-list { list-style: none; padding: 0; margin: 0; }
 
 .social-media-list li { display: inline-block; margin-right: 10px; }
+
+/* Styling for the search box */
+#search-input { display: block; width: 80%; /* Width of the search box */ max-width: 600px; /* Maximum width */ margin: 20px auto; /* Centering the search box */ padding: 10px; font-size: 16px; /* Font size */ border: 1px solid #ccc; /* Border */ border-radius: 5px; /* Rounded corners */ outline: none; /* Remove default outline */ transition: border 0.3s; /* Smooth transition for border */ }
+
+#search-input:focus { border-color: #0078d4; /* Change border color when focused */ }
+
+/* Styling for the search results */
+#search-results { list-style-type: none; /* Remove default bullets */ width: 80%; /* Width of results */ max-width: 600px; /* Maximum width */ margin: 0 auto; /* Centering the results */ padding: 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for a slight 3D effect */ }
+
+#search-results li { border-bottom: 1px solid #f0f0f0; /* Separator between results */ padding: 10px; }
+
+#search-results li:last-child { border-bottom: none; /* Remove border for the last result */ }
+
+#search-results a { text-decoration: none; /* Remove default underline */ color: #333; /* Link color */ }
+
+#search-results a:hover { color: #0078d4; /* Change color on hover */ }

@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets\favicon\apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets\favicon\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets\favicon\favicon-16x16.png">
-    <link rel="manifest" href="/assets\favicon\site.webmanifest">
-</head><head>
+<head><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -26,6 +21,13 @@
 {"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"description":"Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey, and my passion for ensuring a safer online experience.","headline":"About","name":"From Bytes to Blogs","url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" /></head>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
+</head>
+
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">From Bytes to Blogs</a><nav class="site-nav">
@@ -41,12 +43,30 @@
         <div class="trigger"><a class="page-link" href="/about/">About</a></div>
       </nav></div>
 </header>
-<main class="page-content" aria-label="Content">
+<!-- Search Input -->
+<input type="text" id="search-input" placeholder="Search...">
+
+<!-- Results Display -->
+<ul id="search-results"></ul>
+
+<!-- Initialization Script -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found'
+  });
+</script>
+
+    <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">About</h1>
+
   </header>
 
   <div class="post-content">
