@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Update A File Through Python Algorithm"
-date:   2023-11-03
+title: "Update A File Through Python Algorithm"
+date: 2023-11-03
 categories: jekyll update
+description: "Learn how to automate file updates using a Python algorithm"
 ---
 
 ## Project Description
