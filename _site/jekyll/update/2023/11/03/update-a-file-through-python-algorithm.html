@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Update A File Through Python Algorithm | From Bytes to Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Update A File Through Python Algorithm" />
+<meta name="author" content="Jomael Ortiz Perez (0xjoma)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Project Description" />
+<meta property="og:description" content="Project Description" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2023/11/03/update-a-file-through-python-algorithm.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2023/11/03/update-a-file-through-python-algorithm.html" />
+<meta property="og:site_name" content="From Bytes to Blogs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-03T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Update A File Through Python Algorithm" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"dateModified":"2023-11-03T00:00:00-05:00","datePublished":"2023-11-03T00:00:00-05:00","description":"Project Description","headline":"Update A File Through Python Algorithm","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2023/11/03/update-a-file-through-python-algorithm.html"},"url":"http://localhost:4000/jekyll/update/2023/11/03/update-a-file-through-python-algorithm.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" /></head>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
+</head>
+
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">From Bytes to Blogs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<!-- Search Input -->
+<input type="text" id="search-input" placeholder="Search...">
+
+<!-- Results Display -->
+<ul id="search-results"></ul>
+
+<!-- Initialization Script -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found'
+  });
+</script>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Update A File Through Python Algorithm</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-11-03T00:00:00-05:00" itemprop="datePublished">Nov 3, 2023
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="project-description">Project Description</h2>
+
+<p>At my organization, access to restricted content is controlled with an allow list of IP addresses. The <code class="language-plaintext highlighter-rouge">allow_list.txt</code> file identifies these IP addresses. A separate remove list identifies IP addresses that should no longer have access to this content. I created an algorithm to automate updating the <code class="language-plaintext highlighter-rouge">allow_list.txt</code> file and remove these IP addresses that should no longer have access.</p>
+
+<h2 id="open-the-file-that-contains-the-allow-list">Open The File That Contains The Allow List</h2>
+
+<p>For the first part of the algorithm, I opened the <code class="language-plaintext highlighter-rouge">allow_list.txt</code> file. First, I assigned this file name as a string to the <code class="language-plaintext highlighter-rouge">import_file</code> variable:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1"># Assign `import_file` to the name of the file
+</span>
+ <span class="n">import_file</span> <span class="o">=</span> <span class="s">"allow_list.txt"</span>
+</code></pre></div></div>
+<p>Then, I used a <code class="language-plaintext highlighter-rouge">with</code> statement to open the file:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Build `with` statement to read the name in the initial contents of the file
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_file</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>In my algorithm, the <code class="language-plaintext highlighter-rouge">with</code> statement is used with the <code class="language-plaintext highlighter-rouge">.open()</code> function in read mode to open the allow list file for the purpose of reading it. The purpose of opening the file is to allow me to access the IP addresses stored in the allow list file. The <code class="language-plaintext highlighter-rouge">with</code> keyword will help manage the resources by closing the file after exiting the <code class="language-plaintext highlighter-rouge">with</code> statement. In the code <code class="language-plaintext highlighter-rouge">with open(import_file, "r") as file:</code>, the <code class="language-plaintext highlighter-rouge">open()</code> function has two parameters. The first identifies the file to import, and then the second indicates what I want to do with the file. In this case, <code class="language-plaintext highlighter-rouge">"r"</code> indicates that I want to read it. The code also uses the <code class="language-plaintext highlighter-rouge">as</code> keyword to assign a variable named <code class="language-plaintext highlighter-rouge">file</code>; <code class="language-plaintext highlighter-rouge">file</code> stores the output of the <code class="language-plaintext highlighter-rouge">.open()</code> function while I work within the <code class="language-plaintext highlighter-rouge">with</code> statement.</p>
+
+<h2 id="read-the-file-contents">Read The File Contents</h2>
+
+<p>In order to read the file contents, I used the <code class="language-plaintext highlighter-rouge">.read()</code> method to convert it into the string.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_file</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+
+    <span class="c1"># Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+</span>
+    <span class="n">ip_addresses</span> <span class="o">=</span> <span class="nb">file</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>When using an <code class="language-plaintext highlighter-rouge">.open()</code> function that includes the argument <code class="language-plaintext highlighter-rouge">"r"</code> for “read,” I can call the <code class="language-plaintext highlighter-rouge">.read()</code> function in the body of the <code class="language-plaintext highlighter-rouge">with</code> statement. The .<code class="language-plaintext highlighter-rouge">read()</code> method converts the file into a string and allows me to read it. I applied the <code class="language-plaintext highlighter-rouge">.read()</code> method to the <code class="language-plaintext highlighter-rouge">file</code> variable identified in the <code class="language-plaintext highlighter-rouge">with</code> statement. Then, I assigned the string output of this method to the variable <code class="language-plaintext highlighter-rouge">ip_addresses</code>.</p>
+
+<p>In summary, this code reads the contents of the <code class="language-plaintext highlighter-rouge">"allow_list.txt"</code> file into a string format that allows me to later use the string to organize and extract data in my Python program.</p>
+
+<h2 id="convert-the-string-into-a-list">Convert The String Into A List</h2>
+
+<p>In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the <code class="language-plaintext highlighter-rouge">.split()</code> method to convert the <code class="language-plaintext highlighter-rouge">ip_addresses</code> string into a list:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Use `.split()` to convert `ip_addresses` from a string to a list
+</span>
+<span class="n">ip_addresses</span> <span class="o">=</span> <span class="n">ip_addresses</span><span class="p">.</span><span class="n">split</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">.split()</code> function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting <code class="language-plaintext highlighter-rouge">ip_addresses</code> into a list is to make it easier to remove IP addresses from the allow list. By default, the <code class="language-plaintext highlighter-rouge">.split()</code> function splits the text by whitespace into list elements. In this algorithm, the <code class="language-plaintext highlighter-rouge">.split()</code> function takes the data stored in the variable <code class="language-plaintext highlighter-rouge">ip_addresses</code>, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable <code class="language-plaintext highlighter-rouge">ip_addresses</code>.</p>
+
+<h2 id="iterate-through-the-remove-list">Iterate Through The Remove List</h2>
+
+<p>A key part of my algorithm involves iterating through the IP addresses that are elements in the <code class="language-plaintext highlighter-rouge">remove_list</code>. To do this, I incorporated a <code class="language-plaintext highlighter-rouge">for</code> loop:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Build iterative statement
+# Name loop variable `element`
+# Loop through `remove_list`
+</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">remove_list</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">for</code> loop in Python repeats code for a specified sequence. The overall purpose of the <code class="language-plaintext highlighter-rouge">for</code> loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The <code class="language-plaintext highlighter-rouge">for</code> keyword starts the <code class="language-plaintext highlighter-rouge">for</code> loop. It is followed by the loop variable <code class="language-plaintext highlighter-rouge">element</code> and the keyword <code class="language-plaintext highlighter-rouge">in</code>. The keyword <code class="language-plaintext highlighter-rouge">in</code> indicates to iterate through the sequence <code class="language-plaintext highlighter-rouge">ip_addresses</code> and assign each value to the loop variable <code class="language-plaintext highlighter-rouge">element</code>.</p>
+
+<h2 id="remove-ip-addresses-that-are-on-the-remove-list">Remove IP Addresses That Are On The Remove List</h2>
+
+<p>My algorithm requires removing any IP address from the allow list, <code class="language-plaintext highlighter-rouge">ip_addresses</code>, that is also contained in <code class="language-plaintext highlighter-rouge">remove_list</code>.  Because there were not any duplicates in <code class="language-plaintext highlighter-rouge">ip_addresses</code>, I was able to use the following code to do this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">remove_list</span><span class="p">:</span>
+
+    <span class="c1"># Create conditional statement to evaluate if `element` is in `ip_addresses`
+</span>
+        <span class="k">if</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ip_addresses</span><span class="p">:</span>
+           <span class="c1"># use the `.remove()` method to remove
+</span>           <span class="c1"># elements from `ip_addresses`
+</span>
+               <span class="n">ip_addresses</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>First, within my <code class="language-plaintext highlighter-rouge">for</code> loop, I created a conditional that evaluated whether or not the loop variable <code class="language-plaintext highlighter-rouge">element</code> was found in the <code class="language-plaintext highlighter-rouge">ip_addresses</code> list. I did this because applying <code class="language-plaintext highlighter-rouge">.remove()</code> to elements that were not found in <code class="language-plaintext highlighter-rouge">ip_addresses</code> would result in an error.</p>
+
+<p>Then, within that conditional, I applied <code class="language-plaintext highlighter-rouge">.remove()</code> to <code class="language-plaintext highlighter-rouge">ip_addresses</code>. I passed in the loop variable <code class="language-plaintext highlighter-rouge">element</code> as the argument so that each IP address that was in the <code class="language-plaintext highlighter-rouge">remove_list</code> would be removed from <code class="language-plaintext highlighter-rouge">ip_addresses</code>.</p>
+
+<h2 id="update-the-file-with-the-revised-list-of-ip-addresses">Update The File With The Revised List Of IP Addresses</h2>
+
+<p>As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the <code class="language-plaintext highlighter-rouge">.join()</code> method for this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Convert `ip_addresses` back to a string so that it can be written into the text file
+</span>
+<span class="n">ip_addresses</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ip_addresses</span><span class="p">)</span>
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">.join()</code> method combines all items in an iterable into a string. The <code class="language-plaintext highlighter-rouge">.join()</code> method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the <code class="language-plaintext highlighter-rouge">.join()</code> method to create a string from the list <code class="language-plaintext highlighter-rouge">ip_addresses</code> so that I could pass it in as an argument to the <code class="language-plaintext highlighter-rouge">.write()</code> method when writing to the file <code class="language-plaintext highlighter-rouge">"allow_list.txt"</code>. I used the string <code class="language-plaintext highlighter-rouge">("\n")</code> as the separator to instruct Python to place each element on a new line.</p>
+
+<p>Then, I used another <code class="language-plaintext highlighter-rouge">with</code> statement and the <code class="language-plaintext highlighter-rouge">.write()</code> method to update the file:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Build `with` statement to rewrite the original file
+</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_file</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+
+        <span class="c1"># Rewrite the file, replacing its contents with `ip_addresses`
+</span>
+        <span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">ip_addresses</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This time, I used a second argument of <code class="language-plaintext highlighter-rouge">"w"</code> with the <code class="language-plaintext highlighter-rouge">open()</code> function in my <code class="language-plaintext highlighter-rouge">with</code> statement. This argument indicates that I want to open a file to write over its contents. When using this argument <code class="language-plaintext highlighter-rouge">"w"</code>, I can call the <code class="language-plaintext highlighter-rouge">.write()</code> function in the body of the <code class="language-plaintext highlighter-rouge">with</code> statement. The <code class="language-plaintext highlighter-rouge">.write()</code> function writes string data to a specified file and replaces any existing file content.</p>
+
+<p>In this case I wanted to write the updated allow list as a string to the file <code class="language-plaintext highlighter-rouge">"allow_list.txt"</code>. This way, the restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the <code class="language-plaintext highlighter-rouge">.write()</code> function to the file object <code class="language-plaintext highlighter-rouge">file</code> that I identified in the <code class="language-plaintext highlighter-rouge">with</code> statement. I passed in the <code class="language-plaintext highlighter-rouge">ip_addresses</code> variable as the argument to specify that the contents of the file specified in the <code class="language-plaintext highlighter-rouge">with</code> statement should be replaced with the data in this variable.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>I created an algorithm that removes IP addresses identified in a <code class="language-plaintext highlighter-rouge">remove_list</code> variable from the <code class="language-plaintext highlighter-rouge">"allow_list.txt"</code> file of approved IP addresses. This algorithm involved opening the file, converting it to a string to be read, and then converting this string to a list stored in the variable <code class="language-plaintext highlighter-rouge">ip_addresses</code>. I then iterated through the IP addresses in <code class="language-plaintext highlighter-rouge">remove_list</code>. With each iteration, I evaluated if the element was part of the <code class="language-plaintext highlighter-rouge">ip_addresses</code> list. If it was, I applied the <code class="language-plaintext highlighter-rouge">.remove()</code> method to it to remove the element from <code class="language-plaintext highlighter-rouge">ip_addresses</code>.. After this, I used the <code class="language-plaintext highlighter-rouge">.join()</code> method to convert the <code class="language-plaintext highlighter-rouge">ip_addresses</code> back into a string so that I could write over the contents of the <code class="language-plaintext highlighter-rouge">"allow_list.txt"</code> file with the revised list of IP addresses.</p>
+
+<h2 id="credentials">Credentials</h2>
+
+<p>The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.</p>
+
+  </div><a class="u-url" href="/jekyll/update/2023/11/03/update-a-file-through-python-algorithm.html" hidden></a>
+</article>
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">From Bytes to Blogs</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Jomael Ortiz Perez (0xjoma)</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/0xjoma"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a href="https://www.linkedin.com/in/jomael-ortiz-perez-1384ba27b"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> </a></li><li><a href="https://www.twitter.com/0xjoma"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg></a></li></ul>
+
+
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
