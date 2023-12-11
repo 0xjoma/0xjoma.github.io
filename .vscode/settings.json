@@ -1,11 +1,17 @@
 {
     "cSpell.words": [
+        "argparse",
+        "asctime",
         "Balena",
         "Bootable",
+        "Configurability",
         "Customizability",
         "diskutil",
         "exfiltration",
         "hardcopy",
+        "levelname",
+        "lname",
+        "Macbook",
         "rdisk",
         "xjoma"
     ]
