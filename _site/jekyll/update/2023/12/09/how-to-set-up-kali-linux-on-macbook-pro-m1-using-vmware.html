@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE | From Bytes to Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE" />
+<meta name="author" content="Jomael Ortiz Perez (0xjoma)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience." />
+<meta property="og:description" content="Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html" />
+<meta property="og:site_name" content="From Bytes to Blogs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "author": {
+    "@type": "Person",
+    "name": "Jomael Ortiz Perez (0xjoma)"
+  },
+  "description": "Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.",
+  "headline": "How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE",
+  "name": "How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE",
+  "url": "http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html"
+}
+</script>
+<!-- End Jekyll SEO tag --></head>
+
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">From Bytes to Blogs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<!-- Search Input -->
+<input type="text" id="search-input" placeholder="Search...">
+
+<!-- Results Display -->
+<ul id="search-results"></ul>
+
+<!-- Initialization Script -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found'
+  });
+</script>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-12-09T00:00:00-05:00" itemprop="datePublished">Dec 9, 2023
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="project-description">Project Description</h2>
+
+<p><strong>Objective</strong>: This blog post aims to provide a comprehensive guide on how to install Kali Linux, a leading Linux distribution for security and penetration testing, on a MacBook Pro equipped with the Apple M1 chip using VMWare. The guide is tailored for users who wish to utilize the powerful features of Kali Linux on Apple’s innovative M1 hardware, overcoming compatibility challenges.</p>
+
+<p><strong>Target Audience</strong>: The guide is designed for cybersecurity professionals, IT students, and tech enthusiasts who have a basic understanding of operating systems and virtualization. It’s particularly beneficial for those who use MacBook Pro M1 and want to leverage Kali Linux for security assessments, ethical hacking, or educational purposes.</p>
+
+<h2 id="background-linux-on-apples-m1-chip">Background: Linux on Apple’s M1 Chip</h2>
+
+<p><strong>The Advent of Apple Silicon</strong>:</p>
+
+<p>In late 2020, Apple introduced its M1 chip, a significant leap in ARM-based processors, marking a departure from Intel CPUs. The M1 chip promised improved performance and energy efficiency, setting a new standard for personal computing.</p>
+
+<p><strong>Initial Compatibility Challenges</strong>:</p>
+
+<p>The shift to the M1 chip, however, presented notable challenges for Linux distributions, including Kali Linux. The primary hurdle was the ARM architecture, vastly different from the x86 architecture used by Intel and AMD processors, which most Linux distributions were primarily designed for.
+This architectural change necessitated significant modifications in the Linux kernel and other software components to ensure compatibility with the M1’s hardware.</p>
+
+<p><strong>Progress and Development</strong>:</p>
+
+<p>The Linux community, known for its resilience and adaptability, began working on solutions. Efforts were directed towards developing compatible Linux kernels and ensuring software compatibility.
+Over time, virtualization emerged as a viable solution, with tools like VMWare updating their software to support ARM architecture, thereby enabling the running of ARM-compatible Linux distributions on M1 MacBooks.</p>
+
+<p><strong>State of Linux on M1 Today</strong>:</p>
+
+<p>As of now, the Linux experience on M1 MacBooks has improved substantially, with many distributions, including Kali Linux, offering versions that work well with ARM architecture. However, the process can still involve specific workarounds and configurations, especially when using virtualization platforms like VMWare.</p>
+
+<p><strong>Kali Linux and M1: A Synergy of Security and Performance</strong>:</p>
+
+<p>Kali Linux, being a top choice for security professionals, offers a unique advantage when run on the powerful and efficient M1 chip. This combination provides an ideal platform for security testing and research, combining the robust toolset of Kali Linux with the cutting-edge performance of Apple’s M1 hardware.</p>
+
+<p><strong>The Guide’s Purpose</strong>:</p>
+
+<p>The upcoming guide aims to simplify this process, offering step-by-step instructions and insights to successfully install and run Kali Linux on a MacBook Pro M1 using VMWare, bridging the gap between advanced security tools and the latest in hardware innovation.</p>
+
+<h2 id="installing-kali-linux-on-macbook-pro-m1-using-vmware">Installing Kali Linux on MacBook Pro M1 Using VMWare</h2>
+
+<p><strong>Prerequisites</strong>:</p>
+
+<ol>
+  <li>MacBook Pro with M1 Chip: Ensure your MacBook Pro is equipped with the M1 chip.</li>
+  <li>VMWare Fusion for Mac: As of my last update in April 2023, VMWare Fusion offers support for M1 Macs. Download the latest version compatible with ARM architecture from the VMWare website.</li>
+  <li>Kali Linux ARM Image: Download the ARM-compatible version of Kali Linux from the official Kali Linux website.</li>
+  <li>Sufficient Storage Space: Ensure you have enough space on your MacBook Pro for a virtual machine (VM) — at least 20GB is recommended.</li>
+  <li>Backup Your Data: Always back up your data before proceeding with such installations.</li>
+</ol>
+
+<p><strong>Steps</strong>:</p>
+<ol>
+  <li><strong>Install VMWare Fusion</strong>:
+    <ul>
+      <li>Install VMWare Fusion on your MacBook Pro following the instructions provided on the VMWare website.</li>
+    </ul>
+  </li>
+  <li><strong>Setting Up a New Virtual Machine</strong>:
+    <ul>
+      <li>Open VMWare Fusion.</li>
+      <li>Choose to create a new virtual machine.
+Drag and drop the Kali Linux ARM image file onto the VMWare Fusion window or use the ‘Install from disc or image’ option.</li>
+    </ul>
+  </li>
+  <li><strong>Customize Your Virtual Machine</strong>:
+    <ul>
+      <li><strong>Memory and Processors</strong>: Allocate memory (RAM) and CPU cores. It’s recommended to allocate at least 2GB of RAM and 2 CPU cores for smooth operation.</li>
+      <li><strong>Hard Disk</strong>: Ensure the VM has enough space. A minimum of 20GB is recommended for Kali Linux.</li>
+      <li><strong>Network Adapter</strong>: Choose the network settings suitable for your requirements, either NAT or Bridged networking.</li>
+    </ul>
+  </li>
+  <li><strong>Begin the Installation Process</strong>:
+    <ul>
+      <li>Follow the on-screen instructions to start the installation of Kali Linux.</li>
+      <li>Select the appropriate options during the setup, including language, location, keyboard layout, and disk partitioning.</li>
+      <li>When prompted, set the root password and create a new user if required.</li>
+    </ul>
+  </li>
+  <li><strong>Finalizing Installation</strong>:
+    <ul>
+      <li>Allow the installation to complete. This process may take some time.</li>
+      <li>Once the installation is finished, VMWare Fusion should automatically boot into Kali Linux.
+If not, restart the VM and boot into the newly installed Kali Linux.</li>
+    </ul>
+  </li>
+  <li><strong>Installing VMWare Tools (Optional, but Recommended)</strong>:
+    <ul>
+      <li>Once Kali Linux is up and running, install VMWare Tools for better performance and usability.</li>
+      <li>Open the terminal in Kali Linux and run the command to install VMWare Tools <code class="language-plaintext highlighter-rouge">sudo apt-get install open-vm-tools-desktop -y</code>.</li>
+      <li>Restart the VM after the installation.</li>
+    </ul>
+  </li>
+  <li><strong>Update and Upgrade Kali Linux</strong>:
+    <ul>
+      <li>It’s important to update Kali Linux to the latest version.</li>
+      <li>Open the terminal and run <code class="language-plaintext highlighter-rouge">sudo apt-get update</code> and <code class="language-plaintext highlighter-rouge">sudo apt-get upgrade</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Configuring Kali Linux</strong>:
+    <ul>
+      <li>Once updated, you can configure Kali Linux as per your requirements.</li>
+      <li>Install additional security tools and software as needed.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="post-installation">Post-Installation:</h2>
+
+<p><strong>Test Network Connectivity</strong>: Check if the internet is working correctly in the Kali Linux VM.</p>
+
+<p><strong>Create Snapshots</strong>: Use VMWare Fusion to create snapshots of your VM. This allows you to revert to a known state if something goes wrong later.</p>
+
+<p><strong>Explore Kali Linux</strong>: Familiarize yourself with the Kali Linux environment and its tools.</p>
+
+<h2 id="conclusion">Conclusion:</h2>
+
+<p>Installing Kali Linux on a MacBook Pro M1 using VMWare Fusion is a straightforward process, but it requires careful attention to detail. This setup allows you to leverage the powerful capabilities of Kali Linux for security testing and ethical hacking while taking advantage of the performance benefits of the M1 chip. Enjoy exploring the vast array of tools and features that Kali Linux offers!</p>
+
+<h2 id="sources">Sources</h2>
+
+<p><strong>Kali Linux Official Website:</strong></p>
+
+<p>For downloading the ARM-compatible version of Kali Linux.</p>
+
+<p>Website: <a href="https://www.kali.org/get-kali/#kali-arm">Kali Linux Downloads</a></p>
+
+<p><strong>VMware Fusion:</strong></p>
+
+<p>To get the latest version of VMware Fusion compatible with Apple M1 Macs.</p>
+
+<p>Website: <a href="https://www.vmware.com/products/fusion.html">VMware Fusion</a></p>
+
+<p><strong>VMware Fusion Documentation:</strong></p>
+
+<p>For detailed instructions and support related to VMware Fusion.</p>
+
+<p>Documentation: <a href="https://docs.vmware.com/en/VMware-Fusion/index.html">VMware Fusion Documentation</a></p>
+
+<p><strong>Apple M1 Chip Information:</strong></p>
+
+<p>To understand more about the Apple M1 chip’s specifications and capabilities.</p>
+
+<p>Apple M1 Info: <a href="https://www.apple.com/mac/m1/">Apple M1 Chip</a></p>
+
+<p><strong>Kali Linux Documentation:</strong></p>
+
+<p>For specific guidance on using Kali Linux, including installation and configuration.</p>
+
+<p>Documentation: <a href="https://www.kali.org/docs/">Kali Linux Documentation</a></p>
+
+<p><strong>Kali Linux Forums and Community:</strong></p>
+
+<p>To seek help, share experiences, and troubleshoot issues related to Kali Linux.</p>
+
+<p>Community Forum: <a href="https://forums.kali.org/">Kali Linux Forums</a></p>
+
+<p><strong>Apple Support:</strong>
+For assistance with macOS and hardware-specific queries.</p>
+
+<p>Support: <a href="https://support.apple.com/">Apple Support</a></p>
+
+  </div><a class="u-url" href="/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html" hidden></a>
+</article>
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">From Bytes to Blogs</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Jomael Ortiz Perez (0xjoma)</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><!-- Social Media List -->
+<ul class="social-media-list">
+  <!-- GitHub Link --><li>
+    <a href="https://github.com/0xjoma">
+      <svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+      </svg>
+    </a>
+  </li><!-- LinkedIn Link --><li>
+    <a href="https://www.linkedin.com/in/jomael-ortiz-perez-1384ba27b">
+      <svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li><!-- Twitter Link --><li>
+    <a href="https://www.twitter.com/0xjoma">
+      <svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
+      </svg>
+    </a>
+  </li><!-- RSS Feed Link --><li>
+    <a href="/feed.xml">
+      <svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+      </svg>
+    </a>
+  </li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
