@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-11T15:35:16-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE</title><link href="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html" rel="alternate" type="text/html" title="How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE" /><published>2023-12-09T00:00:00-05:00</published><updated>2023-12-09T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html">&lt;h2 id=&quot;project-description&quot;&gt;Project Description&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-11T21:37:28-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name></author><entry><title type="html">Uncovering New Evidence Using Bootable Forensic Utilities</title><link href="http://localhost:4000/jekyll/update/2023/12/11/uncovering-new-evidence-using-bootable-forensic-utilities.html" rel="alternate" type="text/html" title="Uncovering New Evidence Using Bootable Forensic Utilities" /><published>2023-12-11T00:00:00-05:00</published><updated>2023-12-11T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/12/11/uncovering-new-evidence-using-bootable-forensic-utilities</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/12/11/uncovering-new-evidence-using-bootable-forensic-utilities.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In the ever-evolving realm of Digital Forensics, the use of sophisticated forensic software tools stands at the forefront of uncovering pivotal evidence in computer-related crimes. My recent experience in a Digital Forensics class, involving a hands-on lab session, offered a deep dive into this intriguing and crucial aspect of digital investigation. The lab was not only educational but also immensely engaging, providing a practical perspective on how different tools are employed in the field of digital forensics.&lt;/p&gt;
+
+&lt;p&gt;Digital Forensics, primarily concerned with the recovery and investigation of material found in digital devices, plays a critical role in solving crimes that involve digital evidence. The lab focused on demonstrating the functionalities and applications of various forensic tools, each uniquely designed to aid in the meticulous process of evidence extraction and analysis. This report will delve into the specifics of the lab, the tools used, and the insights gained from this practical exposure to the world of digital forensic investigation.&lt;/p&gt;
+
+&lt;h2 id=&quot;tools-used&quot;&gt;Tools Used&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;BrowsingHistoryView&lt;/strong&gt;: This tool is used to view the web browsing history on a computer. It compiles information from various browsers and presents it in a single interface. This can be crucial in determining what websites were accessed from a particular device, which can provide insights into user behavior or intent.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;FavoritesView&lt;/strong&gt;: This software is designed to recover and view the list of bookmarks or “favorites” from various web browsers. Similar to browsing history, this data can offer clues about the user’s interests, intentions, or activities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Helix&lt;/strong&gt;: Helix is a more comprehensive forensic tool that often comes as a bootable CD. It includes various utilities for system analysis, data recovery, and forensics. Helix can be used for tasks like secure data deletion, network analysis, and memory dumping, making it versatile for different aspects of digital forensics.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IECacheView&lt;/strong&gt;: This tool is specifically for Internet Explorer and allows forensic analysts to view and extract the browser’s web cache. The web cache contains temporary internet files, including web pages, images, and other media the user has accessed. This can be useful for reconstructing a user’s internet activities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IECookiesView&lt;/strong&gt;: Similar to IECacheView but specifically for cookies in Internet Explorer, this tool allows forensic experts to view and analyze cookies, which can provide information about the websites visited, login sessions, and user preferences.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MyLastSearch&lt;/strong&gt;: This tool is designed to recover the search queries made on a device. It can extract search queries from popular search engines and social media platforms. This information can be vital in understanding the user’s intentions and activities before a specific event or action.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ProcessExplorer&lt;/strong&gt;: This more advanced system utility provides detailed information about which files and directories are opened by specific processes. It helps understand the behavior of running programs and can be used to detect malicious activities, such as hidden processes or unauthorized access to files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In a forensic investigation, these tools are typically used to collect, analyze, and preserve digital evidence from devices like computers, smartphones, or storage media. The evidence gathered can be used in legal contexts, such as criminal investigations, civil litigations, or corporate audits.&lt;/p&gt;
+
+&lt;h2 id=&quot;methodologies-used-in-forensic-investigations&quot;&gt;Methodologies Used in Forensic Investigations&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Computer Forensics Methodology
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Preparation&lt;/strong&gt;: Before starting the investigation, investigators prepare by gathering the necessary tools software, and ensuring legal compliance.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Preservation&lt;/strong&gt;: The primary step is to preserve the digital evidence. This involves creating a forensic image of the data storage devices, ensuring the original data remains unaltered.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Analysis&lt;/strong&gt;: In this phase, forensic analysts examine the digital copies of the storage media, using various tools to recover deleted, encrypted, or damaged files and extract relevant data.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: This step involves keeping detailed records of the investigation process, findings, and the chain of custody of the evidence.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;: The final step is compiling the findings into a comprehensive report that can be presented in legal proceedings.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Network Forensics Methodology
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Capture&lt;/strong&gt;: This involves capturing and monitoring network traffic. This can be achieved by deploying network sniffers or intrusion detection systems.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Examination&lt;/strong&gt;: The captured data is then examined to identify suspicious activities or anomalies indicating unauthorized access or other malicious activities.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Analysis&lt;/strong&gt;: This phase goes deeper into investigating the nature of the network traffic, identifying the traffic sources, and reconstructing any unauthorized activities.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Correlation&lt;/strong&gt;: Investigators may correlate data from various sources to build a comprehensive picture of the incident.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;: Like computer forensics, the findings are documented in a detailed report.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;common-forensic-certifications&quot;&gt;Common Forensic Certifications&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Certified Computer Examiner (CCE)&lt;/strong&gt;: Offered by the International Society of Forensic Computer Examiners, this certification focuses on the methodologies and best practices for computer forensics. It is widely recognized and emphasizes practical, hands-on experience.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Certified Forensic Computer Examiner (CFCE)&lt;/strong&gt;: Provided by the International Association of Computer Investigative Specialists, this certification involves peer review and independent study. It covers various aspects of computer forensics, including legal issues, digital evidence handling, and forensic analysis techniques.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Certified Information Systems Security Professional (CISSP)&lt;/strong&gt;: Though broader in scope, the CISSP certification by (ISC)² covers aspects of digital forensics as part of its comprehensive information security and cybersecurity curriculum. It is highly regarded in various IT security roles, including forensics.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;evidence-handling-tasks-in-forensic-investigations&quot;&gt;Evidence-Handling Tasks in Forensic Investigations&lt;/h2&gt;
+
+&lt;p&gt;Evidence-handling tasks in forensic investigations are crucial for maintaining the integrity and admissibility of the evidence. These tasks include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Collection&lt;/strong&gt;: Securely collecting digital evidence from various sources like hard drives, mobile devices, and cloud storage. This must be done carefully to avoid altering or damaging the evidence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Preservation&lt;/strong&gt;: Ensuring that the collected evidence is preserved in its original form. This often involves making bit-by-bit copies of digital storage devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: Maintaining detailed records of how the evidence was collected, handled, and analyzed. This includes documenting the chain of custody, which is a record of everyone who handled the evidence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transportation&lt;/strong&gt;: Safely transporting the evidence to the forensic laboratory or storage. This requires secure and tamper-evident containers to prevent unauthorized access or alterations.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: Storing the evidence in a secure environment to prevent damage or unauthorized access. This is crucial for maintaining the validity of the evidence throughout the investigation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analysis&lt;/strong&gt;: Forensic analysts examine the evidence using various techniques and tools, ensuring that the analysis does not alter the original data.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;: Preparing detailed reports that summarize the findings, methodologies used, and the evidence’s relevance in the investigation context.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These tasks are essential to ensure the evidence remains reliable and can be used effectively in legal proceedings or investigative processes.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The in-depth exploration of various forensic tools and methodologies in my Digital Forensics class provides a comprehensive understanding of these tools’ critical role in solving digital crimes. From BrowsingHistoryView to ProcessExplorer, each tool offers unique capabilities in uncovering hidden or deleted data, analyzing user behavior, and piecing together digital interactions. The methodologies, ranging from computer to network forensics, highlight the systematic and meticulous approach required in this field to ensure the integrity and admissibility of evidence.&lt;/p&gt;
+
+&lt;p&gt;The lab experience also emphasized the importance of proper evidence handling, from collection to reporting, underscoring the meticulous nature of forensic investigations. It became evident that every step, whether preserving the digital evidence or documenting the chain of custody, is vital to maintaining the evidence’s reliability and legal standing.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, learning about the various forensic certifications reinforced the need for continuous learning and skill development in this rapidly evolving field. Certifications like CCE, CFCE, and CISSP validate expertise and ensure that professionals stay updated with the latest techniques and legal requirements.&lt;/p&gt;
+
+&lt;p&gt;Overall, this lab experience was not just about learning the use of tools; it was an immersive journey into the complexities and challenges of digital forensics. It sheds light on the importance of digital evidence in modern investigations and the rigorous processes involved in extracting and preserving this evidence. This knowledge is invaluable for anyone aspiring to a career in digital forensics, offering a solid foundation for facing real-world challenges in this dynamic and critical field.&lt;/p&gt;
+
+&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+
+&lt;p&gt;Easttom, C. (2017). System Forensics, Investigation, and Response (3rd ed.). Jones &amp;amp; Bartlett Learning.&lt;/p&gt;</content><author><name>Jomael Ortiz Perez (0xjoma)</name></author><category term="jekyll" /><category term="update" /><summary type="html">Introduction</summary></entry><entry><title type="html">How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE</title><link href="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html" rel="alternate" type="text/html" title="How To Set Up Kali Linux On Macbook Pro, M1 Using VMWARE" /><published>2023-12-09T00:00:00-05:00</published><updated>2023-12-09T00:00:00-05:00</updated><id>http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/12/09/how-to-set-up-kali-linux-on-macbook-pro-m1-using-vmware.html">&lt;h2 id=&quot;project-description&quot;&gt;Project Description&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: This blog post aims to provide a comprehensive guide on how to install Kali Linux, a leading Linux distribution for security and penetration testing, on a MacBook Pro equipped with the Apple M1 chip using VMWare. The guide is tailored for users who wish to utilize the powerful features of Kali Linux on Apple’s innovative M1 hardware, overcoming compatibility challenges.&lt;/p&gt;
 
