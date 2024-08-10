@@ -1,5 +1,149 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-10T09:44:53-11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey, and my passion for ensuring a safer online experience.
-</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name><email>jomael.ortizperez.cv@proton.me</email></author><entry><title type="html">Governance and Law Enforcement in Cyberspace: A Critical Analysis of Cybersecurity Legislation and Policy Implementation</title><link href="http://localhost:4000/jekyll/update/2024/01/02/governance-and-law.html" rel="alternate" type="text/html" title="Governance and Law Enforcement in Cyberspace: A Critical Analysis of Cybersecurity Legislation and Policy Implementation" /><published>2024-01-02T00:00:00-11:00</published><updated>2024-01-02T00:00:00-11:00</updated><id>http://localhost:4000/jekyll/update/2024/01/02/governance-and-law</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/01/02/governance-and-law.html"><![CDATA[<h2 id="project-description">Project Description</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-10T12:31:39-11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">From Bytes to Blogs</title><subtitle>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey, and my passion for ensuring a safer online experience.
+</subtitle><author><name>Jomael Ortiz Perez (0xjoma)</name><email>jomael.ortizperez.cv@proton.me</email></author><entry><title type="html">Analyzing Network Protocols Using Wireshark and Netwitness Investigator</title><link href="http://localhost:4000/academic/2024/08/10/analyzing-network-protocols.html" rel="alternate" type="text/html" title="Analyzing Network Protocols Using Wireshark and Netwitness Investigator" /><published>2024-08-10T00:00:00-11:00</published><updated>2024-08-10T00:00:00-11:00</updated><id>http://localhost:4000/academic/2024/08/10/analyzing-network-protocols</id><content type="html" xml:base="http://localhost:4000/academic/2024/08/10/analyzing-network-protocols.html"><![CDATA[<h1 id="purpose">Purpose</h1>
+<p>When it comes to network security, every professional needs to be familiar with the two most widely used tools in the industry:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wireshark (WS)</th>
+      <th>RSA Net Witness Investigator (NWI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WS is basically a packet capture and analysis software and is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto standard across many commercial and non-profit enterprises, government agencies, and educational institutions.</td>
+      <td>NWI is an interactive threat analysis application that provides security operations staff, auditors, and fraud and forensics investigators the power to perform unprecedented free-form contextual analysis of raw network data captured and reconstructed by the NetWitness NextGen infrastructure. While WS helps you analyze network data at the microscopic level, NWI provides you with a high-level overview making network forensics much easier.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In this lab assignment, I will analyze network protocols using WS and NWI tools. Upon completing this lab, I will be able to:</p>
+
+<ul>
+  <li>Use basic features of WS and NWI.</li>
+  <li>Capture, filter and analyze basic network protocols.</li>
+  <li>Differentiate use cases for WS and NWI.</li>
+</ul>
+
+<h1 id="instructions">Instructions</h1>
+<h2 id="lab-configuration">Lab Configuration</h2>
+<ol>
+  <li>Parent VM: (this is the machine, I connect when login-in in to the virtual lab)</li>
+  <li>Child VM-1: Windows 10 - referred to as VM-1</li>
+  <li>Child VM-3: Metasploitable - referred to as VM-3</li>
+</ol>
+
+<h2 id="lab-tasks">Lab Tasks</h2>
+<p><strong>Task 1:</strong> Capture live traffic (network trace) on VM-1.</p>
+
+<p><strong>Task 2:</strong> Capture live traffic for a “continuous ping test” from VM-1 to VM-3.</p>
+<ul>
+  <li>On VM-1, open the command prompt, type <code class="language-plaintext highlighter-rouge">ping 172.30.0.15 /t</code>, and press <code class="language-plaintext highlighter-rouge">enter</code>.</li>
+</ul>
+
+<p><strong>Task 3:</strong> Capture live traffic only for remote desktop connection from Parent-VM to VM-1</p>
+<ul>
+  <li>From Parent VM, click on the remote desktop connection “Windows 10 VM” to log into VM-1.</li>
+</ul>
+
+<p><strong>Task 4:</strong> Capture browser traffic on Parent VM.</p>
+<ul>
+  <li>From Parent VM, launch the Chrome browser and visit the website <code class="language-plaintext highlighter-rouge">https://uwex.wisconsin.edu/cybersecurity/</code> and browse through a few pages</li>
+  <li>From Wireshark, find the packet with uwex.wisconsin.edu string in the packet details</li>
+  <li>Take and save a screen capture clearly showing the raw data with the said string as you will use it as input for subsequent task.</li>
+</ul>
+
+<p><strong>Task 5:</strong> Import capture from <em>Task 4</em> into <em>NetWitness Investigator</em> (NWI) and got to packet details for <code class="language-plaintext highlighter-rouge">Hostname Aliases = "uwex.wisconsin.edu"</code>
+Provide the values for the following:</p>
+<ul>
+  <li><strong>Cipher name:</strong></li>
+  <li><strong>Source IP address:</strong></li>
+  <li><strong>Destination IP address:</strong></li>
+  <li><strong>TCP Source Port:</strong></li>
+  <li><strong>TCP Destination Port:</strong></li>
+  <li><strong>Destination City:</strong></li>
+  <li><strong>Destination Organization:</strong></li>
+  <li><strong>How many sessions were recorded in your capture:</strong></li>
+  <li><strong>Click on the session count and provide a screen capture using hybrid view for the sessions.</strong></li>
+</ul>
+
+<p><strong>Task 6:</strong> Based on the packet detailes provided by Wireshark (WS) and NWI in <em>Tasks 4</em> and <strong>Tasks 5</strong> for <code class="language-plaintext highlighter-rouge">uwex.wisconsin.edu</code></p>
+<ul>
+  <li>List three differences between WS and NWI. In your opinion, which one makes it easy to read the details?</li>
+  <li>Which tool would you prefer to use if you were doing a quick analysis for your home wireless network to determine all the outgoing connections? List three reasons for your choice of tool.</li>
+  <li>Which tool would you prefer if oyu were doing a ping test to a remote host? Explain your reasons.</li>
+</ul>
+
+<h1 id="tasks-submissions">Tasks Submissions</h1>
+<h4 id="task-1-capture-live-traffic">Task 1: Capture Live Traffic</h4>
+
+<p><img src="/assets/analyzing-network-protocols/task1NetworkTraffic.png" alt="Task 1, Screenshot Capture Live Traffic" /></p>
+
+<h4 id="task-2-capture-live-traffic-for-continuous-ping-test">Task 2: Capture Live Traffic For Continuous Ping Test</h4>
+
+<p><img src="/assets/analyzing-network-protocols/task2CaptureLiveTrafficForAContinuousPingTest.png" alt="Task 2, Screenshot Capture Live Traffic For Continuous Ping Test" /></p>
+
+<h4 id="task-3-capture-live-traffic-only-for-a-remote-desktop-connection-from-parent-vm-to-vm-1">Task 3: Capture Live Traffic Only For a Remote Desktop Connection From Parent-VM to VM-1</h4>
+
+<p><img src="/assets/analyzing-network-protocols/task3CaptureLivetrafficOnlyForARemoteDesktopConnectionFromParentVmToVm1.png" alt="Task 3, Screenshot Capture Live Traffic Only For a Remote Desktop Connection From Parent-VM to VM-1" /></p>
+
+<h4 id="task-4-capture-browser-traffic-on-parent-vm">Task 4: Capture Browser Traffic on Parent VM</h4>
+
+<p><img src="/assets/analyzing-network-protocols/task4CaptureBrowserTrafficOnParentVM.png" alt="Task 4, Screenshot Capture Browser Traffic on Parent VM" /></p>
+
+<h4 id="task-5-import-capture-from-task-4-into-netwitness-investigator-nwi-and-got-to-packet-details-for-hostname-aliases--uwexwisconsinedu">Task 5: Import capture from <em>Task 4</em> into *NetWitness Investigator (NWI) and got to packet details for <code class="language-plaintext highlighter-rouge">Hostname Aliases = "uwex.wisconsin.edu"</code></h4>
+
+<ul>
+  <li><strong>Cipher name:</strong> <code class="language-plaintext highlighter-rouge">tls 1.2 (3)</code></li>
+  <li><strong>Source IP address:</strong> <code class="language-plaintext highlighter-rouge">192.168.202.249</code></li>
+  <li><strong>Destination IP address:</strong> <code class="language-plaintext highlighter-rouge">128.104.80.21</code></li>
+  <li><strong>TCP Source Port:</strong> <code class="language-plaintext highlighter-rouge">TCP</code></li>
+  <li><strong>TCP Destination Port:</strong> <code class="language-plaintext highlighter-rouge">443 (HTTPS)</code></li>
+  <li><strong>Destination City:</strong> <code class="language-plaintext highlighter-rouge">(3)</code></li>
+  <li><strong>Destination Organization:</strong> <code class="language-plaintext highlighter-rouge">University of Wisconsin Madison</code></li>
+  <li><strong>How many sessions were recorded in your capture:</strong> <code class="language-plaintext highlighter-rouge">(3)</code></li>
+  <li><strong>Provide a screen capture using hybrid view for the sessions.</strong> (Screenshot Below)</li>
+</ul>
+
+<p><img src="/assets/analyzing-network-protocols/task5HybridView.png" alt="Task 5, Screenshot Last Bullet Hybrid View" /></p>
+
+<h4 id="task-6-tool-differences-and-preferences">Task 6: Tool Differences and Preferences</h4>
+
+<p><strong>Question one answer</strong></p>
+
+<ol>
+  <li>WS presents a more traditional, detailed interface focusing on raw packet data.</li>
+  <li>NWI offers a more graphical interface with visual tools that help quickly identify patterns and relationships within the network traffic, making it more accessible for quick reviews and overviews.</li>
+  <li>WS display data at a granular level, allowing users to see every bit of packet data in a structure format. This is useful for detailed analysis and troubleshooting.</li>
+</ol>
+
+<p>(a)	In my opinion, WS makes it easier to read detailed packet information. It provides exhaustive protocol decoding capabilities and allow users to dissect each packet layer by layer, which is indispensable for understanding specific network issues or varifying network operations at the byte level.</p>
+
+<p><strong>Questions two answer</strong></p>
+
+<p>(a)	I would prefer WS.</p>
+<ol>
+  <li>Real-time packet capture and analysis</li>
+  <li>Extensive filtering and search capabilities</li>
+  <li>Detailed protocol support</li>
+</ol>
+
+<p><strong>Question three answer</strong></p>
+
+<p>(a)	I would again prefer WS.</p>
+
+<ol>
+  <li>Detailed view of ICMP traffic
+a.	WS provides a detailed view of ICMP traffic, allowing me to observe the request and reply packets in detail.</li>
+  <li>Capability to analyze network performance issues
+a.	This tool allows for an in-depth examination of network performance issues, such as jitter or routing problems.</li>
+  <li>Comprehensive filtering options
+a.	It allows me to easily set up filters to show only ICMP traffic, which simplifies the analysis and helps solely focus on ping test results.</li>
+</ol>
+
+<p>This concludes my lab. Feel free to connect with me and thank you for reading.</p>
+
+<p>View my <a class="page-link" href="https://jomaelortizperez.com/" target="_blank" rel="noopener noreferrer">cv</a>.</p>]]></content><author><name>[&quot;Jomael Ortiz Perez (0xjoma)&quot;]</name></author><category term="Academic" /><summary type="html"><![CDATA[Purpose When it comes to network security, every professional needs to be familiar with the two most widely used tools in the industry:]]></summary></entry><entry><title type="html">Governance and Law Enforcement in Cyberspace: A Critical Analysis of Cybersecurity Legislation and Policy Implementation</title><link href="http://localhost:4000/jekyll/update/2024/01/02/governance-and-law.html" rel="alternate" type="text/html" title="Governance and Law Enforcement in Cyberspace: A Critical Analysis of Cybersecurity Legislation and Policy Implementation" /><published>2024-01-02T00:00:00-11:00</published><updated>2024-01-02T00:00:00-11:00</updated><id>http://localhost:4000/jekyll/update/2024/01/02/governance-and-law</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/01/02/governance-and-law.html"><![CDATA[<h2 id="project-description">Project Description</h2>
 
 <p>This project delves into cyberspace governance’s complex and dynamic realm, focusing on the legal and policy frameworks that govern cybersecurity. It explores the unique challenges posed by the Internet’s transcendence of traditional national boundaries and examines how various entities contribute to creating and enforcing laws in this digital domain.</p>
 
@@ -795,67 +939,4 @@ This project was a valuable exercise in understanding the intricacies of cyberse
 
 <h2 id="credentials">Credentials</h2>
 
-<p>The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.</p>]]></content><author><name>Jomael Ortiz Perez (0xjoma)</name><email>jomael.ortizperez.cv@proton.me</email></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Project Description My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks. Retrieve After Hours Failed Login Attempts There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated. The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours. The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHEREclause with an AND operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time &gt; '18:00', which filters for the login attempts that occurred after 18:00. The second condition is success = FALSE, which filters for the failed login attempts. Retrieve Login Attempts On Specific Dates A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred on specific dates. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is login_date = '2022-05-09', which filters for logins on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for logins on 2022-05-08. Retrieve Login Attempts outside of Mexico After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with NOT to filter for countries other than Mexico. I used LIKE with MEX% as the pattern to match because the dataset represents Mexico as MEX and MEXICO. The percentage sign (%) represents any number of unspecified characters when used with LIKE. Retrieve Employees In Marketing My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Marketing department in the East building. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the employees table. Then, I used a WHEREclause with AND to filter for employees who work in the Marketing department and in the East building. I used LIKE with East% as the pattern to match because the data in the office column represents the East building with the specific office number. The first condition is the department = 'Marketing' portion, which filters for employees in the Marketing department. The second condition is the office LIKE 'East%' portion, which filters for employees in the East building. Retrieve Employees In Finance Or Sales The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Finance or Sales departments. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with OR to filter for employees who are in the Finance and Sales departments. I used the OR operator instead of AND because I want all employees who are in either department. The first condition is department = 'Finance', which filters for employees from the Finance department. The second condition is department = 'Sales', which filters for employees from the Sales department. Retrieve All Employees Not In IT My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees. The following demonstrates how I created a SQL query to filter for employee machines from employees not in the Information Technology department. The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for employees not in this department. Summary I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the AND, OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification.]]></summary></entry><entry><title type="html">File Permissions in Linux</title><link href="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" rel="alternate" type="text/html" title="File Permissions in Linux" /><published>2023-10-24T00:00:00-11:00</published><updated>2023-10-24T00:00:00-11:00</updated><id>http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"><![CDATA[<h2 id="description">Description</h2>
-
-<p>The research team at my organization needs to update the file permissions for certain files and directories within the <code class="language-plaintext highlighter-rouge">projects</code> directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks:</p>
-
-<h2 id="check-file-and-directory-details">Check File and Directory Details</h2>
-
-<p>The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.</p>
-
-<p><img src="/assets\file-permissions-in-linux\check-file-and-directory-details.png" alt="A screenshot of Linux commands to determine the existing permissions set for a specific directory in the file system." /></p>
-
-<p>The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the <code class="language-plaintext highlighter-rouge">projects</code> directory. I used the <code class="language-plaintext highlighter-rouge">ls</code> command with the <code class="language-plaintext highlighter-rouge">-la</code> option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named <code class="language-plaintext highlighter-rouge">drafts</code>, one hidden file named <code class="language-plaintext highlighter-rouge">.project_x.txt</code>, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.</p>
-
-<h2 id="describe-the-permissions-string">Describe the Permissions String</h2>
-
-<p>The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:</p>
-<ul>
-  <li>
-    <p><strong>1st character</strong>: This character is either a <code class="language-plaintext highlighter-rouge">d</code> or hyphen <code class="language-plaintext highlighter-rouge">(-)</code> and indicates the file type. If it’s a <code class="language-plaintext highlighter-rouge">d</code>, it’s a directory. If it’s a hyphen
-<code class="language-plaintext highlighter-rouge">(-)</code>, it’s a regular file.</p>
-  </li>
-  <li><strong>2nd-4th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for the user. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, it indicates that this permission is not granted to the user.</li>
-  <li><strong>5th-7th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for the group. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, it indicates that this permission is not granted for the group.</li>
-  <li><strong>8th-10th characters:</strong> These characters indicate the read <code class="language-plaintext highlighter-rouge">(r)</code>, write <code class="language-plaintext highlighter-rouge">(w)</code>, and execute <code class="language-plaintext highlighter-rouge">(x)</code> permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code> instead, that indicates that this permission is not granted for other.</li>
-</ul>
-
-<p>For example, the file permissions for <code class="language-plaintext highlighter-rouge">project_t.txt</code> are <code class="language-plaintext highlighter-rouge">-rw-rw-r--</code>. Since the first character is a hyphen <code class="language-plaintext highlighter-rouge">(-)</code>, this indicates that <code class="language-plaintext highlighter-rouge">project_t.txt</code> is a file, not a directory. The second, fifth, and eighth characters are all <code class="language-plaintext highlighter-rouge">r</code>, which indicates that user, group, and other all have read permissions. The third and sixth characters are <code class="language-plaintext highlighter-rouge">w</code>, which indicates that only the user and group have write permissions. No one has execute permissions for <code class="language-plaintext highlighter-rouge">project_t.txt</code>.</p>
-
-<h2 id="change-file-permissions">Change File Permissions</h2>
-
-<p>The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined <code class="language-plaintext highlighter-rouge">project_k.txt</code> must have the write access removed for other.</p>
-
-<p>The following code demonstrates how I used Linux commands to do this:</p>
-
-<p><img src="/assets\file-permissions-in-linux\change-file-permissions.png" alt="A screenshot of Linux commands to change file permissions." /></p>
-
-<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The <code class="language-plaintext highlighter-rouge">chmod</code> command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the <code class="language-plaintext highlighter-rouge">project_k.txt</code> file. After this, I used <code class="language-plaintext highlighter-rouge">ls -la</code> to review the updates I made.</p>
-
-<h2 id="change-file-permissions-on-a-hidden-file">Change File Permissions On A Hidden File</h2>
-
-<p>The research team at my organization recently archived <code class="language-plaintext highlighter-rouge">project_x.txt</code>. They do not want anyone to have write access to this project, but the user and group should have read access.</p>
-
-<p>The following code demonstrates how I used Linux commands to change the permissions:</p>
-
-<p><img src="/assets\file-permissions-in-linux\change-file-permissions-on-a-hidden-file.png" alt="A screenshot of Linux commands to change file permissions on a hidden file." /></p>
-
-<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know <code class="language-plaintext highlighter-rouge">.project_x.txt</code> is a hidden file because it starts with a period <code class="language-plaintext highlighter-rouge">(.)</code>. In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with <code class="language-plaintext highlighter-rouge">u-w</code>. Then, I removed write permissions from the group with <code class="language-plaintext highlighter-rouge">g-w</code>, and added read permissions to the group with <code class="language-plaintext highlighter-rouge">g+r</code>.</p>
-
-<h2 id="change-directory-permissions">Change Directory Permissions</h2>
-
-<p>My organization only wants the <code class="language-plaintext highlighter-rouge">researcher2</code> user to have access to the <code class="language-plaintext highlighter-rouge">drafts</code> directory and its contents. This means that no one other than <code class="language-plaintext highlighter-rouge">researcher2</code> should have execute permissions.</p>
-
-<p>The following code demonstrates how I used Linux commands to change the permissions:</p>
-
-<p><img src="/assets\file-permissions-in-linux\change-directory-permissions.png" alt="A screenshot of Linux commands to change directory permissions." /></p>
-
-<p>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the <code class="language-plaintext highlighter-rouge">chmod</code> command to remove them. The <code class="language-plaintext highlighter-rouge">researcher2</code> user already had execute permissions, so they did not need to be added.</p>
-
-<h2 id="summary">Summary</h2>
-
-<p>I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the <code class="language-plaintext highlighter-rouge">projects</code> directory. The first step in this was using <code class="language-plaintext highlighter-rouge">ls -la</code> to check the permissions for the directory. This informed my decisions in the following steps. I then used the <code class="language-plaintext highlighter-rouge">chmod</code> command multiple times to change the permissions on files and directories.</p>
-
-<h2 id="credentials">Credentials</h2>
-
-<p>The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.</p>]]></content><author><name>Jomael Ortiz Perez (0xjoma)</name><email>jomael.ortizperez.cv@proton.me</email></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Description The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks: Check File and Directory Details The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system. The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory. Describe the Permissions String The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows: 1st character: This character is either a d or hyphen (-) and indicates the file type. If it’s a d, it’s a directory. If it’s a hyphen (-), it’s a regular file. 2nd-4th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user. 5th-7th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group. 8th-10th characters: These characters indicate the read (r), write (w), and execute (x) permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other. For example, the file permissions for project_t.txt are -rw-rw-r--. Since the first character is a hyphen (-), this indicates that project_t.txt is a file, not a directory. The second, fifth, and eighth characters are all r, which indicates that user, group, and other all have read permissions. The third and sixth characters are w, which indicates that only the user and group have write permissions. No one has execute permissions for project_t.txt. Change File Permissions The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other. The following code demonstrates how I used Linux commands to do this: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made. Change File Permissions On A Hidden File The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. Change Directory Permissions My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added. Summary I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification.]]></summary></entry></feed>
+<p>The skills and knowledge demonstrated in this article were acquired from my <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AZYF4ATWUNXF" target="_blank">Google Cybersecurity Certificate</a>. Feel free to view it for verification.</p>]]></content><author><name>Jomael Ortiz Perez (0xjoma)</name><email>jomael.ortizperez.cv@proton.me</email></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Project Description My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks. Retrieve After Hours Failed Login Attempts There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated. The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours. The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHEREclause with an AND operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time &gt; '18:00', which filters for the login attempts that occurred after 18:00. The second condition is success = FALSE, which filters for the failed login attempts. Retrieve Login Attempts On Specific Dates A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred on specific dates. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is login_date = '2022-05-09', which filters for logins on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for logins on 2022-05-08. Retrieve Login Attempts outside of Mexico After investigating the organization’s data on login attempts, I believe there is an issue with the login attempts that occurred outside of Mexico. These login attempts should be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with NOT to filter for countries other than Mexico. I used LIKE with MEX% as the pattern to match because the dataset represents Mexico as MEX and MEXICO. The percentage sign (%) represents any number of unspecified characters when used with LIKE. Retrieve Employees In Marketing My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Marketing department in the East building. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the employees table. Then, I used a WHEREclause with AND to filter for employees who work in the Marketing department and in the East building. I used LIKE with East% as the pattern to match because the data in the office column represents the East building with the specific office number. The first condition is the department = 'Marketing' portion, which filters for employees in the Marketing department. The second condition is the office LIKE 'East%' portion, which filters for employees in the East building. Retrieve Employees In Finance Or Sales The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Finance or Sales departments. The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with OR to filter for employees who are in the Finance and Sales departments. I used the OR operator instead of AND because I want all employees who are in either department. The first condition is department = 'Finance', which filters for employees from the Finance department. The second condition is department = 'Sales', which filters for employees from the Sales department. Retrieve All Employees Not In IT My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees. The following demonstrates how I created a SQL query to filter for employee machines from employees not in the Information Technology department. The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for employees not in this department. Summary I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the AND, OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification.]]></summary></entry></feed>
