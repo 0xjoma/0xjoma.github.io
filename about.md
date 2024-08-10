@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi there! I'm Jomael, an active military member passionate about cybersecurity and information systems.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+* Currently pursuing an M.S. in Cybersecurity at the University of Wisconsin-La Crosse
+* Background in Information Systems and Cybersecurity
+* Enthusiastic about learning and sharing knowledge in the cybersecurity field
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Connect & Learn
 
+* Check out my blog for insights on my cybersecurity journey
+* Follow me on X (Twitter) for discussions on the latest in cybersecurity
+* Feel free to reach out if you want to chat about cybersecurity, share ideas, or collaborate on projects!
 
-[jekyll-organization]: https://github.com/jekyll
+<a class="page-link" href="https://jomaelortizperez.com/" target="_blank" rel="noopener noreferrer">View my cv</a>

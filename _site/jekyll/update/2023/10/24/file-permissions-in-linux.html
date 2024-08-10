@@ -1,45 +1,28 @@
 <!DOCTYPE html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="/assets/favicon/site.webmanifest">
-<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>File Permissions in Linux | From Bytes to Blogs</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="File Permissions in Linux" />
 <meta name="author" content="Jomael Ortiz Perez (0xjoma)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience." />
-<meta property="og:description" content="Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience." />
+<meta name="description" content="Description The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks: Check File and Directory Details The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system. The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory. Describe the Permissions String The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows: 1st character: This character is either a d or hyphen (-) and indicates the file type. If it’s a d, it’s a directory. If it’s a hyphen (-), it’s a regular file. 2nd-4th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user. 5th-7th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group. 8th-10th characters: These characters indicate the read (r), write (w), and execute (x) permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other. For example, the file permissions for project_t.txt are -rw-rw-r--. Since the first character is a hyphen (-), this indicates that project_t.txt is a file, not a directory. The second, fifth, and eighth characters are all r, which indicates that user, group, and other all have read permissions. The third and sixth characters are w, which indicates that only the user and group have write permissions. No one has execute permissions for project_t.txt. Change File Permissions The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other. The following code demonstrates how I used Linux commands to do this: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made. Change File Permissions On A Hidden File The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. Change Directory Permissions My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added. Summary I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification." />
+<meta property="og:description" content="Description The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks: Check File and Directory Details The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system. The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory. Describe the Permissions String The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows: 1st character: This character is either a d or hyphen (-) and indicates the file type. If it’s a d, it’s a directory. If it’s a hyphen (-), it’s a regular file. 2nd-4th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user. 5th-7th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group. 8th-10th characters: These characters indicate the read (r), write (w), and execute (x) permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other. For example, the file permissions for project_t.txt are -rw-rw-r--. Since the first character is a hyphen (-), this indicates that project_t.txt is a file, not a directory. The second, fifth, and eighth characters are all r, which indicates that user, group, and other all have read permissions. The third and sixth characters are w, which indicates that only the user and group have write permissions. No one has execute permissions for project_t.txt. Change File Permissions The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other. The following code demonstrates how I used Linux commands to do this: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made. Change File Permissions On A Hidden File The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. Change Directory Permissions My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added. Summary I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification." />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html" />
 <meta property="og:site_name" content="From Bytes to Blogs" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-24T00:00:00-11:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="File Permissions in Linux" />
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "author": {
-    "@type": "Person",
-    "name": "Jomael Ortiz Perez (0xjoma)"
-  },
-  "description": "Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.",
-  "headline": "File Permissions in Linux",
-  "name": "File Permissions in Linux",
-  "url": "http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"
-}
-</script>
-<!-- End Jekyll SEO tag --></head>
-
-<body><header class="site-header" role="banner">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jomael Ortiz Perez (0xjoma)"},"dateModified":"2023-10-24T00:00:00-11:00","datePublished":"2023-10-24T00:00:00-11:00","description":"Description The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks: Check File and Directory Details The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system. The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory. Describe the Permissions String The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows: 1st character: This character is either a d or hyphen (-) and indicates the file type. If it’s a d, it’s a directory. If it’s a hyphen (-), it’s a regular file. 2nd-4th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user. 5th-7th characters: These characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group. 8th-10th characters: These characters indicate the read (r), write (w), and execute (x) permissions for other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other. For example, the file permissions for project_t.txt are -rw-rw-r--. Since the first character is a hyphen (-), this indicates that project_t.txt is a file, not a directory. The second, fifth, and eighth characters are all r, which indicates that user, group, and other all have read permissions. The third and sixth characters are w, which indicates that only the user and group have write permissions. No one has execute permissions for project_t.txt. Change File Permissions The organization determined that other shouldn’t have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other. The following code demonstrates how I used Linux commands to do this: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made. Change File Permissions On A Hidden File The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. Change Directory Permissions My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions. The following code demonstrates how I used Linux commands to change the permissions: The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added. Summary I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories. Credentials The skills and knowledge demonstrated in this article were acquired from my Google Cybersecurity Certificate. Feel free to view it for verification.","headline":"File Permissions in Linux","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"},"url":"http://localhost:4000/jekyll/update/2023/10/24/file-permissions-in-linux.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="From Bytes to Blogs" />
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">From Bytes to Blogs</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -54,31 +37,14 @@
         <div class="trigger"><a class="page-link" href="/about/">About</a></div>
       </nav></div>
 </header>
-<!-- Search Input -->
-<input type="text" id="search-input" placeholder="Search...">
-
-<!-- Results Display -->
-<ul id="search-results"></ul>
-
-<!-- Initialization Script -->
-<script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    json: '/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-    noResultsText: 'No results found'
-  });
-</script>
-
-    <main class="page-content" aria-label="Content">
+<main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">File Permissions in Linux</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2023-10-24T00:00:00-11:00" itemprop="datePublished">Oct 24, 2023
+    <p class="post-meta"><time class="dt-published" datetime="2023-10-24T00:00:00-11:00" itemprop="datePublished">
+        Oct 24, 2023
       </time></p>
   </header>
 
@@ -151,57 +117,59 @@
   </div><a class="u-url" href="/jekyll/update/2023/10/24/file-permissions-in-linux.html" hidden></a>
 </article>
 
-
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">From Bytes to Blogs</h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="http://localhost:4000/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
         <ul class="contact-list">
-          <li class="p-name">Jomael Ortiz Perez (0xjoma)</li></ul>
+          <li class="p-name">Jomael Ortiz Perez (0xjoma)</li>
+          <li><a class="u-email" href="mailto:jomael.ortizperez.cv@proton.me">jomael.ortizperez.cv@proton.me</a></li>
+        </ul>
       </div>
-
-      <div class="footer-col footer-col-2"><!-- Social Media List -->
-<ul class="social-media-list">
-  <!-- GitHub Link --><li>
-    <a href="https://github.com/0xjoma">
-      <svg class="svg-icon">
-        <use xlink:href="/assets/minima-social-icons.svg#github"></use>
-      </svg>
-    </a>
-  </li><!-- LinkedIn Link --><li>
-    <a href="https://www.linkedin.com/in/jomael-ortiz-perez">
-      <svg class="svg-icon">
-        <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
-      </svg>
-    </a>
-  </li><!-- Twitter Link --><li>
-    <a href="https://www.twitter.com/0xjoma">
-      <svg class="svg-icon">
-        <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
-      </svg>
-    </a>
-  </li><!-- RSS Feed Link --><li>
-    <a href="/feed.xml">
-      <svg class="svg-icon">
-        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
-      </svg>
-    </a>
-  </li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey,  and my passion for ensuring a safer online experience.</p>
+      <div class="footer-col">
+        <p>Aspiring cybersecurity expert and student delving deep into the world of digital defense. Discover my academic projects, insights from my learning journey, and my passion for ensuring a safer online experience.
+</p>
       </div>
     </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/0xjoma" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://x.com/0xjoma" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.linkedin.com/in/jomael-ortiz-perez-1384ba27b/" target="_blank" title="linkedin">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
 
   </div>
 
 </footer>
 </body>
+
+</html>
