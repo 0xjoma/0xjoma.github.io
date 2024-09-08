@@ -32,6 +32,6 @@ import matplotlib.pyplot as plt
 from timeit import default_timer as timer
 ```
 
-Source files can be found <a class="page-link" href="https://github.com/0xjoma/academiaProjects/tree/main/Module_01_coding_Assignment_The_Erastosthenes_Method/" target="_blank" rel="noopener noreferrer">here</a>
+Source files can be found <a class="page-link" href="https://github.com/0xjoma/academiaProjects/tree/main/Module_01_coding_Assignment_The_Erastosthenes_Method/" target="_blank" rel="noopener noreferrer">here</a>.
 
 View my <a class="page-link" href="https://jomaelortizperez.com/" target="_blank" rel="noopener noreferrer">cv</a>.
