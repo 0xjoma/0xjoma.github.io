@@ -8,5 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
 end
 
-gem "webrick", "~> 1.7"
+# gem "webrick", "~> 1.7"
+gem "puma"
 gem "faraday-retry"
